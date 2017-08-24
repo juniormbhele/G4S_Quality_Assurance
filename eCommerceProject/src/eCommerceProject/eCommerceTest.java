@@ -49,9 +49,9 @@ public class eCommerceTest
 	    }	    
 	    
 
-	    // Step 3. Click on ‘MOBILE’ menu
+	    // Step 3. Click on ï¿½MOBILEï¿½ menu
 	    driver.findElement(By.linkText("MOBILE")).click();	
-      // Step 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’		
+      // Step 5. In the list of all mobile , select ï¿½SORT BYï¿½ dropdown as ï¿½nameï¿½		
 	    new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]"))).selectByVisibleText("Name");
 	    
 	    // Step 6. Verify all products are sorted by name

@@ -1,25 +1,10 @@
 package clientZone;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +17,10 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.io.*;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 public class CashOpsManualTransactions03 
 
@@ -302,30 +291,31 @@ public class CashOpsManualTransactions03
 		int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
 		int sealNumber = Integer.parseInt(values.getData("sealNumber"));
 		int amount = Integer.parseInt(values.getData("amount"));
-		int FirstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
-		int FirstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
-		int SecondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
-		int SecondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
+
+		int firstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
+		int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
+		int secondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
+		int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
 		
 		amount = amount + 10000;
 		
 		canisterNumber++;
 		sealNumber++;
 		
-		FirstR200Notes = (amount/2)/200;
-		FirstR100Notes = (amount/2)/100;
+		firstR200Notes = (amount/2)/200;
+		firstR100Notes = (amount/2)/100;
 		
-		SecondR200Notes = (amount/2)/200;
-		SecondR100Notes = (amount/2)/100;
+		secondR200Notes = (amount/2)/200;
+		secondR100Notes = (amount/2)/100;
 		
 		String CN = Integer.toString(canisterNumber);
 		String SN = Integer.toString(sealNumber);
 		String am = Integer.toString(amount);
 		
-		String first100 = Integer.toString(FirstR100Notes);
-		String first200 = Integer.toString(FirstR200Notes);
-		String second100 = Integer.toString(SecondR100Notes);
-		String second200 = Integer.toString(SecondR200Notes);
+		String first100 = Integer.toString(firstR100Notes);
+		String first200 = Integer.toString(firstR200Notes);
+		String second100 = Integer.toString(secondR100Notes);
+		String second200 = Integer.toString(secondR200Notes);
 			try 
 			{
 				Properties properties = new Properties();

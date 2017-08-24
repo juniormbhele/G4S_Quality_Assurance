@@ -12,19 +12,26 @@ public class ManualTransactions
 
 		public static void main (String[] args)
 		{
-			for(int i=0;i<5;i++)
-	        {
-	            List<String> suites = new ArrayList<String>();
-	            
-	            workingDir = System.getProperty("user.dir");
-	            suites.add(workingDir+"\\Resources\\ManualTrans.xml"); //path of .xml file to be run-provide complete path
+            try {
 
-	            TestNG tng = new TestNG();
-	            tng.setTestSuites(suites);
+                for(int i=0;i<5;i++)
+                {
+                List<String> suites = new ArrayList<String>();
 
-	            tng.run(); //run test suite
-	        }
-		}
+                workingDir = System.getProperty("user.dir");
+                suites.add(workingDir+"\\Resources\\ManualTrans.xml"); //path of .xml file to be run-provide complete path
+
+                TestNG test = new TestNG();
+                test.setTestSuites(suites);
+
+                //run test suite
+                test.run();
+}
+            } catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
 	
 
 }
