@@ -1,16 +1,15 @@
 package JMeterPackage;
 
-import static org.junit.Assert.*;
-
-import java.util.LinkedHashMap;
-import java.util.concurrent.TimeUnit;
-
+import clientZone.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import clientZone.UIMap;
+import java.util.LinkedHashMap;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.fail;
 
 public class AddUser 
 {
