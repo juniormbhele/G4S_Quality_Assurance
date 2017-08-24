@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="G4S - ClientZone" annotations="JDK" parallel="tests">
+         
+  <test name="Add Card Admin">
+	 <classes>
+	   <class name="clientZone.AddUserjava"/>
+	 </classes>
+   </test>
+   
+  <test name="Log in with a New User">
+     <classes>
+       <class name="clientZone.VerifyCardAdministatorRoles"/>
+     </classes>
+   </test>
+</suite>

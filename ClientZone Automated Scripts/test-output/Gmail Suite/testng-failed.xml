@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Suite]" parallel="tests">
+  <test name="Log in with a New User(failed)" parallel="tests">
+    <classes>
+      <class name="clientZone.VerifyCardAdministatorRoles">
+        <methods>
+          <include name="ChangePassword"/>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- clientZone.VerifyCardAdministatorRoles -->
+    </classes>
+  </test> <!-- Log in with a New User(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->

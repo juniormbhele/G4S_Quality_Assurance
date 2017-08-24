@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [G4S - ClientZone]" parallel="tests">
+  <test name="Add Card Admin(failed)" parallel="tests">
+    <classes>
+      <class name="clientZone.AddUserjava">
+        <methods>
+          <include name="DoLogin"/>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- clientZone.AddUserjava -->
+    </classes>
+  </test> <!-- Add Card Admin(failed) -->
+</suite> <!-- Failed suite [G4S - ClientZone] -->

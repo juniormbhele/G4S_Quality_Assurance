@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BuidlingWebServices/BuidlingWebServices.iml" filepath="$PROJECT_DIR$/BuidlingWebServices/BuidlingWebServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CashOps Automated Scripts/CashOps Automated Scripts.iml" filepath="$PROJECT_DIR$/CashOps Automated Scripts/CashOps Automated Scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClientZone Automated Scripts/ClientZone Automated Scripts.iml" filepath="$PROJECT_DIR$/ClientZone Automated Scripts/ClientZone Automated Scripts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cosp Retail Automation Project/Cosp Retail Automation Project.iml" filepath="$PROJECT_DIR$/Cosp Retail Automation Project/Cosp Retail Automation Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JMeter/JMeter.iml" filepath="$PROJECT_DIR$/JMeter/JMeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eCommerceProject/eCommerceProject.iml" filepath="$PROJECT_DIR$/eCommerceProject/eCommerceProject.iml" />
+    </modules>
+  </component>
+</project>

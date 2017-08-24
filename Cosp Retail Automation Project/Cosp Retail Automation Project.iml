@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar:////192.168.176.30/HomeDeposita/New folder (9)/Import Jar Files/selenium-server-standalone-3.4.0.jar!/" />
+    <libelement value="jar://C:/Settings/Desktop Application Automation/winium-elements-desktop-0.1.0-1.jar!/" />
+    <libelement value="jar://C:/Settings/Desktop Application Automation/winium-webdriver-0.1.0-1.jar!/" />
+    <conelement value="org.testng.TESTNG_CONTAINER" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="selenium-server-standalone-3.4.0.jar">
+        <CLASSES>
+          <root url="jar:////192.168.176.30/HomeDeposita/New folder (9)/Import Jar Files/selenium-server-standalone-3.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="winium-elements-desktop-0.1.0-1.jar">
+        <CLASSES>
+          <root url="jar://C:/Settings/Desktop Application Automation/winium-elements-desktop-0.1.0-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="winium-webdriver-0.1.0-1.jar">
+        <CLASSES>
+          <root url="jar://C:/Settings/Desktop Application Automation/winium-webdriver-0.1.0-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="org.testng.TESTNG_CONTAINER" level="application" />
+  </component>
+</module>

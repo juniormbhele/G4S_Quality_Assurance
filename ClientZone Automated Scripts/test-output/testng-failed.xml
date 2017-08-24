@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Manual Transactions]">
+  <test name="1(failed)">
+    <parameter name="host" value="1"/>
+    <classes>
+      <class name="clientZone.CashOpsManualTransactions">
+        <methods>
+          <include name="suiteSetUp"/>
+          <include name="SearchTrans"/>
+          <include name="tearDown"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class> <!-- clientZone.CashOpsManualTransactions -->
+    </classes>
+  </test> <!-- 1(failed) -->
+  <test name="2(failed)">
+    <parameter name="host" value="1"/>
+    <classes>
+      <class name="clientZone.CashOpsManualTransactions03">
+        <methods>
+          <include name="SearchTrans"/>
+          <include name="suiteTearDown"/>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+        </methods>
+      </class> <!-- clientZone.CashOpsManualTransactions03 -->
+    </classes>
+  </test> <!-- 2(failed) -->
+</suite> <!-- Failed suite [Manual Transactions] -->

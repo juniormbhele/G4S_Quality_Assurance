@@ -1,0 +1,39 @@
+Username_field =xpath:html/body/div/div[2]/div/div/div[2]/div[2]/form/div[1]/div/div/input
+Password_field =xpath:/html/body/div/div[2]/div/div/div[2]/div[2]/form/div[2]/div/div/input
+Login_button =xpath:/html/body/div/div[2]/div/div/div[2]/div[2]/form/div[3]/div/div[2]/button
+online_user = xpath:/html/body/div/div[2]/section/div/div[1]/h3
+users = xpath://*[@id="bs-example-navbar-collapse-1"]/ul/li[2]/a
+usersHeading = xpath:/html/body/div/section/div[2]/div/h3
+addUser = xpath:/html/body/div/div[2]/div/ul/li[2]
+addUserHeading =xpath:/html/body/div/section/h3
+CardNameEditorRole=xpath:/html/body/div/section/form/div[7]/div[1]/checkbox-group/div[2]/div[6]/label/input
+UserUsername = id:userName
+FirstName = id:firstName
+LastName = id:lastname
+Email = id:email
+UserPassword = id:newPassword
+Phone =id:phone
+addUserForm = id:submit
+search=name:search
+searchButton = xpath:/html/body/div/section/div[2]/div/form/input[2]
+currentPassword = id:currentPassword
+newPassword = id:newPassword
+confirmPassword=id:confirmPassword
+updateUserPasswordForm = xpath:/html/body/div/section/form/input
+cardAdministratorRole = xpath:/html/body/div/section/form/div[7]/div[1]/checkbox-group/div[2]/div[5]/label/input
+
+
+CO_Username_field =name:j_username
+CO_Password_field =name:j_password
+CO_Login_button =name:submit
+TransTypeField = name:transactionType.id
+canisterNumber = name:canisterNumber
+sealNumber=name:sealNumber
+clientCode=name:clientCode
+flashNumber=name:flashNumber
+currencyCode=name:currencyCode
+amount=name:amount
+search=xpath://*[@id="manualTransactionSearchParameters"]/table/tbody/tr[9]/td/input
+
+
+

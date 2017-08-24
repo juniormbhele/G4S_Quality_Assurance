@@ -1,0 +1,432 @@
+package clientZone;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.AssertJUnit;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class CashOpsManualTransactions 
+
+{
+	public WebDriver driver;
+	public UIMap uimap;
+	public UIMap datafile;
+	public UIMap values;
+	public String workingDir;
+
+	
+	public static final String EXPECT_TITLE = "Deposita CashOps System: Transaction Details";
+	
+	// Declare An Excel Work Book
+	HSSFWorkbook workbook;
+	
+	// Declare An Excel Work Sheet
+	HSSFSheet sheet;
+	
+	// Declare A Map Object To Hold TestNG Results
+	Map<String, Object[]> TestNGResults;
+	public static String driverPath = "C:\\selenium\\";
+	
+	
+	
+	@Test(description = "Opens the CashOps Manual Transactions URL", priority = 1)
+	public void LaunchWebsite() throws Exception 
+	{
+	try 
+	{
+	driver.get("https://uat.cashops.deposita.co.za/deposita/searchManualTransactions.do");
+	Thread.sleep(1000);
+	
+	driver.manage().window().maximize();
+	TestNGResults.put("2", new Object[] { 1d, "Navigate to CashOps Manual Transactions", "Site gets opened", "Pass" });
+	
+	Thread.sleep(1000);
+	// Take screenshot and store as a file format
+	File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	
+	// now copy the  screenshot to desired location using copyFile //method
+	FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+
+	} catch (Exception e) {
+	TestNGResults.put("2", new Object[] { 1d, "Navigate to CashOps Manual Transactions", "Site gets opened", "Fail" });
+	Assert.assertTrue(false);
+	}
+	
+	
+	}
+	
+	
+	
+	@Test(description = "Fill the Login Details", priority = 2)
+	public void FillLoginDetails() throws Exception 
+	{
+			try 
+			{
+			// Get the username element
+			WebElement username = driver.findElement(uimap.getLocator("CO_Username_field"));
+			username.sendKeys(datafile.getData("CO_username"));
+			Thread.sleep(1000);
+			
+			// Get the password element
+			WebElement password = driver.findElement(uimap.getLocator("CO_Password_field"));
+			password.sendKeys(datafile.getData("CO_password"));
+			Thread.sleep(1000);
+			
+			TestNGResults.put("3", new Object[] { 2d, "Fill Login form data (Username/Password)",
+			"Login details gets filled", "Pass" });
+			
+
+			// Take screenshot and store as a file format
+			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			Thread.sleep(1000);
+			// now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+			} catch (Exception e) 
+			{
+			TestNGResults.put("3",
+			new Object[] { 2d, "Fill Login form data (Username/Password)", "Login form gets filled", "Fail" });
+			Assert.assertTrue(false);
+			}
+	}
+	@Test(description = "Perform Login", priority = 3)
+	public void DoLogin() throws Exception 
+	{
+		
+			try 
+			{
+			// Click on the Login button
+			WebElement login = driver.findElement(uimap.getLocator("CO_Login_button"));
+			login.click();
+			Thread.sleep(1000);
+			// Assert the user login by checking the Online user
+			
+			AssertJUnit.assertEquals(driver.getTitle(), EXPECT_TITLE);
+	
+			TestNGResults.put("4",
+			new Object[] { 3d, "Click Login and verify welcome message", "Login success", "Pass" });
+			Thread.sleep(1000);
+			
+			// Take screenshot and store as a file format
+			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			Thread.sleep(1000);
+						
+			// now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+			} 
+			catch (Exception e) 
+			{
+			TestNGResults.put("4",
+			new Object[] { 3d, "Click Login and verify welcome message", "Login success", "Fail" });
+			Assert.assertTrue(false);
+			
+			}
+	}
+	
+	@Test(description = "Fill in Transactions Details", priority = 4)
+	public void UsersTab() throws Exception 
+	{
+		
+			try 
+			{
+				
+			
+				// Fill in the Transaction Type - 01
+				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField"));
+			
+				// Fill in the Canister Number
+				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
+				canisterNumber.sendKeys(values.getData("canisterNumber"));
+				
+				// Fill in the Seal Number
+				WebElement sealNumber = driver.findElement(uimap.getLocator("sealNumber"));
+				sealNumber.sendKeys(values.getData("sealNumber"));
+		
+
+				// Fill in the Client Code
+				WebElement clientCode = driver.findElement(uimap.getLocator("clientCode"));
+				clientCode.sendKeys(datafile.getData("clientCode"));
+				
+
+				// Fill in the Flash Number
+				WebElement flashNumber = driver.findElement(uimap.getLocator("flashNumber"));
+				flashNumber.sendKeys(datafile.getData("flashNumber"));
+				
+				
+				// Fill in the Currency Code
+				WebElement currencyCode = driver.findElement(uimap.getLocator("currencyCode"));
+				currencyCode.sendKeys(datafile.getData("currencyCode"));
+				
+				// Fill in the amount
+				WebElement amount = driver.findElement(uimap.getLocator("amount"));
+				amount.sendKeys(datafile.getData("amount"));
+		
+			
+			TestNGResults.put("5",
+			new Object[] { 4d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
+			Thread.sleep(1000);
+			
+			// Take screenshot and store as a file format
+			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+									
+			// now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+			} 
+			catch (Exception e) 
+			{
+			TestNGResults.put("5",
+			new Object[] { 4d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Fail" });
+			Assert.assertTrue(false);
+			
+			}
+	}
+	
+	
+	@Test(description = "Search for Transactions Details", priority = 5)
+	public void SearchTrans() throws Exception 
+	{
+		
+			try 
+			{
+				
+			
+				// Click the search button
+				WebElement search = driver.findElement(uimap.getLocator("search"));
+				search.click();
+				Thread.sleep(1000);
+			
+				// Click the search button
+				WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
+				ProcessManualTrans.click();
+				Thread.sleep(1000);
+				
+				// Fill in the transaction Date
+				WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
+				transactionDateStr.clear();
+				transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
+				
+				// Fill in the Card Details
+				WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
+				cardId.sendKeys(datafile.getData("cardId"));
+				
+				// Fill in the Vendor REF
+				WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
+				vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
+				
+				// Fill in the Client REF
+				WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
+				clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
+				
+				// Fill in the First Count - R100 Notes
+				WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
+				FirstR100Notes.sendKeys(datafile.getData("FirstR100Notes"));
+				
+				// Fill in the First Count - R200 Notes
+				WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
+				FirstR200Notes.sendKeys(datafile.getData("FirstR200Notes"));
+				
+				// Fill in the Second Count - R100 Notes
+				WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
+				SecondR100Notes.sendKeys(datafile.getData("SecondR100Notes"));
+				
+				// Fill in the First Count - R200 Notes
+				WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
+				SecondR200Notes.clear();
+				SecondR200Notes.sendKeys(datafile.getData("SecondR200Notes"));
+				
+				// Fill in the First Count - Total
+				WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
+				firsttotal.clear();
+				firsttotal.sendKeys(datafile.getData("amount"));
+				
+				// Fill in the Second Count - Total
+				WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
+				secondtotal.clear();
+				secondtotal.sendKeys(datafile.getData("amount"));
+				
+				// Click Process Entry
+				WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
+				processEntry.click();
+				
+			
+			TestNGResults.put("6",
+			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
+			
+			
+			// Take screenshot and store as a file format
+			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+									
+			// now copy the  screenshot to desired location using copyFile //method
+			FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+			} 
+			catch (Exception e) 
+			{
+			TestNGResults.put("5",
+			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Fail" });
+			Assert.assertTrue(false);
+			
+			}
+	}
+	
+	@Test(description = "Increment values for Canister and Seal Number", priority = 6)
+	public void incrementValues() throws Exception 
+	{
+		
+			try 
+			{
+				
+				Properties p = new Properties();
+	            p.setProperty("canisterNumber", "5645454");
+	            p.setProperty("sealNumber", "5645454");
+	           
+	            File file = new File("values.properties");
+	            FileOutputStream fOut = new FileOutputStream(file);
+	            p.store(fOut, "Favorite Things");
+	            fOut.close();
+				
+			} 
+			catch (Exception e) 
+			{
+			
+			Assert.assertTrue(false);
+			
+			}
+	}
+	
+	
+	
+	
+	@BeforeClass(alwaysRun = true)
+	public void suiteSetUp() 
+	{
+			// create a new work book
+			workbook = new HSSFWorkbook();
+			// create a new work sheet
+			sheet = workbook.createSheet("CashOps Manual Tranctions");
+			TestNGResults = new LinkedHashMap<String, Object[]>();
+			// add test result excel file column header
+			// write the header in the first row
+			TestNGResults.put("1", new Object[] { "Test Step No.", "Action", "Expected Output", "Actual Output" });
+			try 
+			{
+			// Get current working directory and load the data file
+			workingDir = System.getProperty("user.dir");
+			datafile = new UIMap(workingDir + "\\Resources\\datafile.properties");
+			
+			// Get current working directory and load the data file
+						workingDir = System.getProperty("user.dir");
+						values = new UIMap(workingDir + "\\Resources\\values.properties");
+			// Get the object map file
+			uimap = new UIMap(workingDir + "\\Resources\\locator.properties");
+			
+			
+			// Setting up Chrome driver path.
+			System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
+			
+			// Launching Chrome browser.
+			driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			} catch (Exception e) {
+			throw new IllegalStateException("Can't start the Chrome Web Driver", e);
+			}
+	}
+	
+	
+	@AfterClass
+	public void suiteTearDown() 
+	{
+			// write excel file and file name is LoginResults.xls
+			Set<String> keyset = TestNGResults.keySet();
+			int rownum = 0;
+			for (String key : keyset) {
+			Row row = sheet.createRow(rownum++);
+			Object[] objArr = TestNGResults.get(key);
+			int cellnum = 0;
+			for (Object obj : objArr) {
+			Cell cell = row.createCell(cellnum++);
+			if (obj instanceof Date)
+			cell.setCellValue((Date) obj);
+			else if (obj instanceof Boolean)
+			cell.setCellValue((Boolean) obj);
+			else if (obj instanceof String)
+			cell.setCellValue((String) obj);
+			else if (obj instanceof Double)
+			cell.setCellValue((Double) obj);
+	}
+	
+	
+	}
+		try {
+		FileOutputStream out = new FileOutputStream(new File("Manual Transactions.xls"));
+		workbook.write(out);
+		out.close();
+		System.out.println("Successfully saved Card Name Editor Results to an Excel File!!!");
+		} catch (FileNotFoundException e) {
+		e.printStackTrace();
+		} catch (IOException e) {
+		e.printStackTrace();
+		}
+	// close the browser
+	//driver.close();
+	
+	}
+  
+	// It will execute after every test execution 
+	@AfterMethod
+	public void tearDown(ITestResult result)
+	{
+		 
+		// Here will compare if test is failing then only it will enter into if condition
+		if(ITestResult.FAILURE==result.getStatus())
+		{
+		try 
+		{
+		// Create reference of TakesScreenshot
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		 
+		// Call method to capture screenshot
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		 
+		// Copy files to specific location here it will save all screenshot in our project home directory and
+		// result.getName() will return name of test case so that screenshot name will be same
+		FileUtils.copyFile(source, new File("./Screenshots/Failed/"+result.getName()+".png"));
+		 
+		System.out.println("Screenshot taken");
+		} 
+		catch (Exception e)
+		{
+		 
+		System.out.println("Exception while taking screenshot "+e.getMessage());
+		} 
+		 
+		 
+		 
+		}
+	}
+}

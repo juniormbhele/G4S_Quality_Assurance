@@ -1,0 +1,125 @@
+package eCommerceProject;
+
+import java.io.File;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.AssertJUnit;
+import java.util.concurrent.TimeUnit;
+import org.testng.annotations.*;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class eCommerceTest 
+{
+	private WebDriver driver;
+	  private String baseUrl;
+	  public int scc = 0;
+	  
+	  private StringBuffer verificationErrors = new StringBuffer();
+
+	  @BeforeMethod
+	@BeforeTest
+	public void setUp() throws Exception 
+	  {
+		 System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		// Step 1 Goto http://live.guru99.com/
+	    baseUrl = "http://live.guru99.com/";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    
+	  }
+	  @Test
+	  public void SortMobilePage() throws Exception 
+	  {
+		
+	    driver.get(baseUrl); 
+	    driver.manage().window().maximize();
+		//Step 2. Verify Title of the page
+	    String demoSite  = driver.findElement(By.cssSelector("h2")).getText();
+	    System.out.println(demoSite);
+	    try {
+	      AssertJUnit.assertEquals("THIS IS DEMO SITE FOR   ", demoSite);
+	    } catch (Error e) {
+	      verificationErrors.append(e.toString());
+	    }	    
+	    
+
+	    // Step 3. Click on ‘MOBILE’ menu
+	    driver.findElement(By.linkText("MOBILE")).click();	
+      // Step 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’		
+	    new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]"))).selectByVisibleText("Name");
+	    
+	    // Step 6. Verify all products are sorted by name
+		// this will take a screen shot of the manager's page after a successful login
+	    scc = (scc+1);
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String png = ("C:\\Selenium\\Mobile Products are sorted" + scc + ".png");
+		FileUtils.copyFile(scrFile, new File(png));
+		
+		//Read the value of the Sony Experia 
+		String experiaAmount = driver.findElement(By.xpath("//*[@id=\"product-price-1\"]/span")).getText();
+		
+		System.out.println("Sony Experia Amount is "+experiaAmount);
+		scc = (scc+1);
+		File scrFile2 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String png2 = ("C:\\Selenium\\First Amount" + scc + ".png");
+		FileUtils.copyFile(scrFile2, new File(png2));
+		
+		//Clicking the product for more details
+		driver.findElement(By.xpath("//*[@id=\"product-collection-image-1\"]")).click();
+		
+		//Comparing prices on the page and product page
+		
+		if (driver.findElement(By.xpath("//*[@id=\"product-price-1\"]/span")).getText().contains(experiaAmount)) 
+		{
+			System.out.println("Sony Experia amounts are matchng");
+			scc = (scc+1);
+			File scrFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			String png3 = ("C:\\Selenium\\Second Amount" + scc + ".png");
+			FileUtils.copyFile(scrFile3, new File(png3));
+		}
+		else
+		{
+			System.out.println("Sony Experia amounts are not matchng");
+		}
+		
+		
+		//Add Sony Experia to the Cart
+		
+		driver.findElement(By.xpath("//*[@id=\"product_addtocart_form\"]/div[4]/div/div/div[2]/button/span/span")).click();
+	
+		//Change QTY to 1000 - //*[@id="shopping-cart-table"]/tbody/tr/td[4]/input
+		driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input")).clear();
+		driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/input")).sendKeys("1000");
+		
+		//Update button - //*[@id="shopping-cart-table"]/tbody/tr/td[4]/button/span/span
+		driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[4]/button/span/span")).click();
+		
+		//Verifying the error message
+		
+		String errorMessage = driver.findElement(By.xpath("//*[@id=\"shopping-cart-table\"]/tbody/tr/td[2]/p")).getText();
+		
+		if (errorMessage.contains(" The maximum quantity allowed for purchase is 500."))
+		{
+			System.out.println("You can't add more than 500 QTY to the cart");
+			
+		}
+		else
+		{
+			System.out.println("You can add more than 500 QTY to the cart");
+			
+		}
+	    }	
+	  
+	@AfterTest
+	public void tearDown() throws Exception {
+		//driver.quit();
+	   
+	  }
+	
+}

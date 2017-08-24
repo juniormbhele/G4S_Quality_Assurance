@@ -1,0 +1,9 @@
+package clientZone;
+
+import org.testng.annotations.Test;
+
+public class CashOpsManualTransactions {
+  @Test
+  public void f() {
+  }
+}

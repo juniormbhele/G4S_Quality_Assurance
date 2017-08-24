@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Manual Transactions" duration-ms="42128" started-at="2017-08-24T14:26:46Z" finished-at="2017-08-24T14:27:28Z">
+    <groups>
+    </groups>
+    <test name="1" duration-ms="20900" started-at="2017-08-24T14:26:46Z" finished-at="2017-08-24T14:27:07Z">
+      <class name="clientZone.CashOpsManualTransactions">
+        <test-method status="PASS" signature="suiteSetUp()[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="suiteSetUp" is-config="true" duration-ms="2648" started-at="2017-08-24T16:26:46Z" finished-at="2017-08-24T16:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetUp -->
+        <test-method status="PASS" signature="LaunchWebsite()[pri:1, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="LaunchWebsite" duration-ms="5429" started-at="2017-08-24T16:26:49Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-24T16:26:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchWebsite -->
+        <test-method status="PASS" signature="FillLoginDetails()[pri:2, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="FillLoginDetails" duration-ms="776" started-at="2017-08-24T16:26:54Z" description="Fill the Login Details" finished-at="2017-08-24T16:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillLoginDetails -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:26:54Z" finished-at="2017-08-24T16:26:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LaunchWebsite status=SUCCESS method=CashOpsManualTransactions.LaunchWebsite()[pri:1, instance:clientZone.CashOpsManualTransactions@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="DoLogin()[pri:3, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="DoLogin" duration-ms="4076" started-at="2017-08-24T16:26:55Z" description="Perform Login" finished-at="2017-08-24T16:26:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:26:55Z" finished-at="2017-08-24T16:26:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FillLoginDetails status=SUCCESS method=CashOpsManualTransactions.FillLoginDetails()[pri:2, instance:clientZone.CashOpsManualTransactions@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:26:59Z" finished-at="2017-08-24T16:26:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DoLogin status=SUCCESS method=CashOpsManualTransactions.DoLogin()[pri:3, instance:clientZone.CashOpsManualTransactions@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="UsersTab()[pri:4, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="UsersTab" duration-ms="1433" started-at="2017-08-24T16:26:59Z" description="Fill in Transactions Details" finished-at="2017-08-24T16:27:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsersTab -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:00Z" finished-at="2017-08-24T16:27:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UsersTab status=SUCCESS method=CashOpsManualTransactions.UsersTab()[pri:4, instance:clientZone.CashOpsManualTransactions@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="SearchTrans()[pri:5, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="SearchTrans" duration-ms="6273" started-at="2017-08-24T16:27:00Z" description="Search for Transactions Details" finished-at="2017-08-24T16:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTrans -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="tearDown" is-config="true" duration-ms="4" started-at="2017-08-24T16:27:07Z" finished-at="2017-08-24T16:27:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchTrans status=SUCCESS method=CashOpsManualTransactions.SearchTrans()[pri:5, instance:clientZone.CashOpsManualTransactions@3a5ecce3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:clientZone.CashOpsManualTransactions@3a5ecce3]" name="suiteTearDown" is-config="true" duration-ms="256" started-at="2017-08-24T16:27:07Z" finished-at="2017-08-24T16:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- clientZone.CashOpsManualTransactions -->
+    </test> <!-- 1 -->
+    <test name="2" duration-ms="21211" started-at="2017-08-24T14:27:07Z" finished-at="2017-08-24T14:27:28Z">
+      <class name="clientZone.CashOpsManualTransactions03">
+        <test-method status="PASS" signature="suiteSetUp()[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="suiteSetUp" is-config="true" duration-ms="2569" started-at="2017-08-24T16:27:07Z" finished-at="2017-08-24T16:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteSetUp -->
+        <test-method status="PASS" signature="LaunchWebsite()[pri:1, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="LaunchWebsite" duration-ms="7244" started-at="2017-08-24T16:27:09Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-24T16:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchWebsite -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:17Z" finished-at="2017-08-24T16:27:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LaunchWebsite status=SUCCESS method=CashOpsManualTransactions03.LaunchWebsite()[pri:1, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="FillLoginDetails()[pri:2, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="FillLoginDetails" duration-ms="773" started-at="2017-08-24T16:27:17Z" description="Fill the Login Details" finished-at="2017-08-24T16:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FillLoginDetails -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:17Z" finished-at="2017-08-24T16:27:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FillLoginDetails status=SUCCESS method=CashOpsManualTransactions03.FillLoginDetails()[pri:2, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="DoLogin()[pri:3, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="DoLogin" duration-ms="2377" started-at="2017-08-24T16:27:17Z" description="Perform Login" finished-at="2017-08-24T16:27:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DoLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:20Z" finished-at="2017-08-24T16:27:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DoLogin status=SUCCESS method=CashOpsManualTransactions03.DoLogin()[pri:3, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="UsersTab()[pri:4, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="UsersTab" duration-ms="1369" started-at="2017-08-24T16:27:20Z" description="Fill in Transactions Details" finished-at="2017-08-24T16:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UsersTab -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:21Z" finished-at="2017-08-24T16:27:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UsersTab status=SUCCESS method=CashOpsManualTransactions03.UsersTab()[pri:4, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="SearchTrans()[pri:5, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="SearchTrans" duration-ms="6583" started-at="2017-08-24T16:27:21Z" description="Search for Transactions Details" finished-at="2017-08-24T16:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTrans -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-24T16:27:28Z" finished-at="2017-08-24T16:27:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchTrans status=SUCCESS method=CashOpsManualTransactions03.SearchTrans()[pri:5, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="incrementValues()[pri:6, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="incrementValues" duration-ms="1" started-at="2017-08-24T16:27:28Z" description="Increment values for Canister and Seal Number" finished-at="2017-08-24T16:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- incrementValues -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-24T16:27:28Z" finished-at="2017-08-24T16:27:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=incrementValues status=SUCCESS method=CashOpsManualTransactions03.incrementValues()[pri:6, instance:clientZone.CashOpsManualTransactions03@7803bfd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="suiteTearDown()[pri:0, instance:clientZone.CashOpsManualTransactions03@7803bfd]" name="suiteTearDown" is-config="true" duration-ms="290" started-at="2017-08-24T16:27:28Z" finished-at="2017-08-24T16:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- clientZone.CashOpsManualTransactions03 -->
+    </test> <!-- 2 -->
+  </suite> <!-- Manual Transactions -->
+</testng-results>

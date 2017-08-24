@@ -1,0 +1,19 @@
+url=https://uat.cashops.deposita.co.za/clientZone/#/
+username=systems
+password=password
+Role= Card Administrator
+UserUsername = Jr_CardAdmin01
+FirstName = Junior
+LastName = Denty - Jr_CardAdmin01
+Email = Jr_CardAdmin01@dentycommucations.co.za
+UserPassword = Junior@1000
+Phone =0792360784
+newPassword = Junior@1001
+
+CO_usernam=Bongs.Malabola
+password=Password
+
+TransTypeField = 1-ABM 01
+canisterNumber = 523698
+sealNumber=523698
+

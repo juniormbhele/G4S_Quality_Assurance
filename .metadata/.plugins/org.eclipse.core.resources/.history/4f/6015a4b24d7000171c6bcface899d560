@@ -1,0 +1,62 @@
+package eCommerceProject;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.AssertJUnit;
+import org.testng.annotations.AfterTest;
+
+public class CompareTwoPhones 
+{
+	private WebDriver driver;
+	  private String baseUrl;
+	  public int scc = 0;
+	  
+	  private StringBuffer verificationErrors = new StringBuffer();
+	  
+  @Test
+  public void compareTwoPhones() 
+  {
+	  	driver.get(baseUrl); 
+	    driver.manage().window().maximize();
+		//Step 2. Verify Title of the page
+	    String demoSite  = driver.findElement(By.cssSelector("h2")).getText();
+	    System.out.println(demoSite);
+	    try {
+	      AssertJUnit.assertEquals("THIS IS DEMO SITE FOR   ", demoSite);
+	    } catch (Error e) {
+	      verificationErrors.append(e.toString());
+	    }	    
+	    
+
+	    // Step 3. Click on ‘MOBILE’ menu
+	    driver.findElement(By.linkText("MOBILE")).click();	
+	    
+	    // Step 5. In the list of all mobile , select ‘SORT BY’ dropdown as ‘name’		
+	    new Select(driver.findElement(By.cssSelector("select[title=\"Sort By\"]"))).selectByVisibleText("Name");
+	    
+	    
+  }
+  @BeforeTest
+  public void beforeTest() 
+  {
+	  	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
+		// Step 1 Goto http://live.guru99.com/
+	    baseUrl = "http://live.guru99.com/";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+  }
+
+  @AfterTest
+  public void afterTest() 
+  {
+	  
+  }
+
+}

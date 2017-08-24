@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="//192.168.176.30/HomeDeposita/New folder (9)/Import Jar Files/selenium-server-standalone-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Settings/Desktop Application Automation/winium-elements-desktop-0.1.0-1.jar"/>
+	<classpathentry kind="lib" path="C:/Settings/Desktop Application Automation/winium-webdriver-0.1.0-1.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

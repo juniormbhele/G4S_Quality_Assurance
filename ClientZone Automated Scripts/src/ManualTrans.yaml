@@ -1,0 +1,9 @@
+name: Manual Transactions
+threadCount: 3
+configFailurePolicy: skip
+tests:
+  - name: 1
+    parameters: { host: 1 }
+    classes:
+      - ManualTransactions.LaunchWebsite
+

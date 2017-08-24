@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\sphiwe.mbhele\Downloads\Day02"/>
+		<item value="C:\Users\sphiwe.mbhele\Downloads"/>
+		<item value="C:\Users\sphiwe.mbhele\Music\Day06"/>
+		<item value="C:\Users\sphiwe.mbhele\eclipse-workspace"/>
+		<item value="C:\Users\sphiwe.mbhele\eclipse-workspace\Day06"/>
+	</list>
+	<section name="CleanDialogSettings">
+		<item value="662" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
+		<item value="629" key="DIALOG_X_ORIGIN"/>
+		<item value="239" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\sphiwe.mbhele\Downloads"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Users\sphiwe.mbhele\Downloads\Assessment.zip"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="645" key="DIALOG_HEIGHT"/>
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

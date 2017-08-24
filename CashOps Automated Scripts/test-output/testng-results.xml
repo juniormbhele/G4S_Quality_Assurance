@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9529" started-at="2017-08-03T10:36:48Z" finished-at="2017-08-03T10:36:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9529" started-at="2017-08-03T10:36:48Z" finished-at="2017-08-03T10:36:58Z">
+      <class name="cashOpsPackage.AddCITVehicles">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cashOpsPackage.AddCITVehicles@46d56d67]" name="beforeTest" is-config="true" duration-ms="7018" started-at="2017-08-03T12:36:48Z" finished-at="2017-08-03T12:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="addCITVehicle()[pri:0, instance:cashOpsPackage.AddCITVehicles@46d56d67]" name="addCITVehicle" duration-ms="2486" started-at="2017-08-03T12:36:55Z" finished-at="2017-08-03T12:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCITVehicle -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:cashOpsPackage.AddCITVehicles@46d56d67]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-08-03T12:36:58Z" finished-at="2017-08-03T12:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- cashOpsPackage.AddCITVehicles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
