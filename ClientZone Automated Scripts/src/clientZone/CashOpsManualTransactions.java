@@ -1,25 +1,10 @@
 package clientZone;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +17,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class CashOpsManualTransactions 
 
@@ -222,60 +217,60 @@ public class CashOpsManualTransactions
 				WebElement search = driver.findElement(uimap.getLocator("search"));
 				search.click();
 				Thread.sleep(1000);
-			
+
 				// Click the search button
 				WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
 				ProcessManualTrans.click();
 				Thread.sleep(1000);
-				
+
 				// Fill in the transaction Date
 				WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
 				transactionDateStr.clear();
 				transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
-				
+
 				// Fill in the Card Details
 				WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
 				cardId.sendKeys(datafile.getData("cardId"));
-				
+
 				// Fill in the Vendor REF
 				WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
 				vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
-				
+
 				// Fill in the Client REF
 				WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
 				clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
-				
+
 				// Fill in the First Count - R100 Notes
 				WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
 				FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
-				
+
 				// Fill in the First Count - R200 Notes
 				WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
 				FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
-				
+
 				// Fill in the Second Count - R100 Notes
 				WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
 				SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
-				
+
 				// Fill in the First Count - R200 Notes
 				WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
 				SecondR200Notes.clear();
 				SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
-				
+
 				// Fill in the First Count - Total
 				WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
 				firsttotal.clear();
 				firsttotal.sendKeys(values.getData("amount"));
-				
+
 				// Fill in the Second Count - Total
 				WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
 				secondtotal.clear();
 				secondtotal.sendKeys(values.getData("amount"));
-				
+
 				// Click Process Entry
 				WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
 				processEntry.click();
-				
+
 			
 			TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
@@ -295,9 +290,66 @@ public class CashOpsManualTransactions
 			
 			}
 	}
-	
-	
-	@BeforeClass(alwaysRun = true)
+
+    @Test(description = "Authorize 01 transactions", priority = 6)
+    public void authorize01() throws Exception
+    {
+
+        try
+        {
+            //Navigate to the authorization screen
+            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
+
+        // Fill in the transaction from Date
+            WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
+            transactionDateStr.clear();
+            transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
+
+            // Fill in the Transaction Type - 01
+            WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField"));
+
+            // Fill in the Canister Number
+            WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
+            canisterNumber.sendKeys(values.getData("canisterNumber"));
+
+
+            // Fill in the transactionState
+            WebElement transactionState = driver.findElement(uimap.getLocator("transactionState"));
+            transactionState.sendKeys(datafile.getData("transactionState"));
+
+            //Click the search
+            WebElement authorizedSearch = driver.findElement(uimap.getLocator("authorizedSearch"));
+            authorizedSearch.click();
+            Thread.sleep(1000);
+
+            //Click the Authorize Transaction button
+            WebElement authTranButtonId = driver.findElement(uimap.getLocator("authTranButtonId"));
+            authTranButtonId.click();
+            Thread.sleep(1000);
+
+
+            TestNGResults.put("6",
+                    new Object[]{6d, "Authorize 01 transaction", "01 Transaction should be authorized", "Pass"});
+
+
+            // Take screenshot and store as a file format
+            File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+            // now copy the  screenshot to desired location using copyFile //method
+            FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+        }
+        catch (Exception e)
+        {
+            TestNGResults.put("5",
+                    new Object[] { 6d, "Authorize 01 transaction","01 Transaction should be authorized", "Fail" });
+            Assert.assertTrue(false);
+
+        }
+    }
+
+
+    @BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
 	{
 			// create a new work book

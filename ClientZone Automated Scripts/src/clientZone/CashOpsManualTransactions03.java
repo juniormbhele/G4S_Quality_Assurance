@@ -284,8 +284,65 @@ public class CashOpsManualTransactions03
 			
 			}
 	}
-	
-	@Test(description = "Increment values for Canister and Seal Number", priority = 6)
+
+    @Test(description = "Authorize 03 transactions", priority = 6)
+    public void authorize01() throws Exception
+    {
+
+        try
+        {
+            //Navigate to the authorization screen
+            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
+
+            // Fill in the transaction from Date
+            WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
+            transactionDateStr.clear();
+            transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
+
+            // Fill in the Transaction Type - 03
+            WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField"));
+
+            // Fill in the Canister Number
+            WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
+            canisterNumber.sendKeys(values.getData("canisterNumber"));
+
+
+            // Fill in the transactionState
+            WebElement transactionState = driver.findElement(uimap.getLocator("transactionState"));
+            transactionState.sendKeys(datafile.getData("transactionState"));
+
+            //Click the search
+            WebElement authorizedSearch = driver.findElement(uimap.getLocator("authorizedSearch"));
+            authorizedSearch.click();
+            Thread.sleep(1000);
+
+            //Click the Authorize Transaction button
+            WebElement authTranButtonId = driver.findElement(uimap.getLocator("authTranButtonId"));
+            authTranButtonId.click();
+            Thread.sleep(1000);
+
+
+            TestNGResults.put("6",
+                    new Object[]{6d, "Authorize 03 transaction", "01 Transaction should be authorized", "Pass"});
+
+
+            // Take screenshot and store as a file format
+            File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+            // now copy the  screenshot to desired location using copyFile //method
+            FileUtils.copyFile(src, new File("C:\\Users\\sphiwe.mbhele\\eclipse-workspace\\ClientZone Automated Scripts\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
+        }
+        catch (Exception e)
+        {
+            TestNGResults.put("5",
+                    new Object[] { 6d, "Authorize 03 transaction","01 Transaction should be authorized", "Fail" });
+            Assert.assertTrue(false);
+
+        }
+    }
+
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
 	public void incrementValues() throws Exception 
 	{
 		int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
