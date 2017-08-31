@@ -2,16 +2,18 @@
 <testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="NedBank Manual Transactions" duration-ms="42713" started-at="2017-08-31T11:38:10Z" finished-at="2017-08-31T11:38:52Z">
+  <suite name="NedBank Manual Transactions" duration-ms="35024" started-at="2017-08-31T12:27:15Z" finished-at="2017-08-31T12:27:50Z">
     <groups>
     </groups>
-    <test name="1" duration-ms="22051" started-at="2017-08-31T11:38:10Z" finished-at="2017-08-31T11:38:32Z">
+    <test name="1" duration-ms="17197" started-at="2017-08-31T12:27:15Z" finished-at="2017-08-31T12:27:32Z">
       <class name="com.g4s.nedbank.CashOpsManualTransactions01">
-        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="3297" started-at="2017-08-31T11:38:10Z" finished-at="2017-08-31T11:38:13Z">
+        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="2415" started-at="2017-08-31T12:27:15Z" finished-at="2017-08-31T12:27:18Z">
         </test-method>
-        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="5078" started-at="2017-08-31T11:38:13Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-31T11:38:18Z">
+        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="4409" started-at="2017-08-31T12:27:18Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-31T12:27:22Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:18Z" finished-at="2017-08-31T11:38:18Z">
+        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="542" started-at="2017-08-31T12:27:22Z" description="Fill the Login Details" finished-at="2017-08-31T12:27:22Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:22Z" finished-at="2017-08-31T12:27:22Z">
           <params>
             <param index="0">
               <value>
@@ -21,11 +23,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="838" started-at="2017-08-31T11:38:18Z" description="Fill the Login Details" finished-at="2017-08-31T11:38:19Z">
-        </test-method>
-        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="4499" started-at="2017-08-31T11:38:19Z" description="Perform Login" finished-at="2017-08-31T11:38:23Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:19Z" finished-at="2017-08-31T11:38:19Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-31T12:27:22Z" finished-at="2017-08-31T12:27:22Z">
           <params>
             <param index="0">
               <value>
@@ -35,9 +33,11 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="1310" started-at="2017-08-31T11:38:23Z" description="Fill in Transactions Details" finished-at="2017-08-31T11:38:25Z">
+        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="3742" started-at="2017-08-31T12:27:22Z" description="Perform Login" finished-at="2017-08-31T12:27:26Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:23Z" finished-at="2017-08-31T11:38:23Z">
+        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="916" started-at="2017-08-31T12:27:26Z" description="Fill in Transactions Details" finished-at="2017-08-31T12:27:27Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:26Z" finished-at="2017-08-31T12:27:26Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:25Z" finished-at="2017-08-31T11:38:25Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-31T12:27:27Z" finished-at="2017-08-31T12:27:27Z">
           <params>
             <param index="0">
               <value>
@@ -57,9 +57,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="6717" started-at="2017-08-31T11:38:25Z" description="Search for Transactions Details" finished-at="2017-08-31T11:38:31Z">
+        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="4920" started-at="2017-08-31T12:27:27Z" description="Search for Transactions Details" finished-at="2017-08-31T12:27:32Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:31Z" finished-at="2017-08-31T11:38:31Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:32Z" finished-at="2017-08-31T12:27:32Z">
           <params>
             <param index="0">
               <value>
@@ -69,19 +69,19 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="312" started-at="2017-08-31T11:38:31Z" finished-at="2017-08-31T11:38:32Z">
+        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="251" started-at="2017-08-31T12:27:32Z" finished-at="2017-08-31T12:27:32Z">
         </test-method>
       </class>
     </test>
-    <test name="2" duration-ms="20651" started-at="2017-08-31T11:38:32Z" finished-at="2017-08-31T11:38:52Z">
+    <test name="2" duration-ms="17815" started-at="2017-08-31T12:27:32Z" finished-at="2017-08-31T12:27:50Z">
       <class name="com.g4s.nedbank.CashOpsManualTransactions03">
-        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="3937" started-at="2017-08-31T11:38:32Z" finished-at="2017-08-31T11:38:36Z">
+        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="3695" started-at="2017-08-31T12:27:32Z" finished-at="2017-08-31T12:27:36Z">
         </test-method>
-        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="6592" started-at="2017-08-31T11:38:36Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-31T11:38:42Z">
+        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="5910" started-at="2017-08-31T12:27:36Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-08-31T12:27:42Z">
         </test-method>
-        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="619" started-at="2017-08-31T11:38:42Z" description="Fill the Login Details" finished-at="2017-08-31T11:38:43Z">
+        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="635" started-at="2017-08-31T12:27:42Z" description="Fill the Login Details" finished-at="2017-08-31T12:27:43Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:42Z" finished-at="2017-08-31T11:38:42Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:42Z" finished-at="2017-08-31T12:27:42Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:43Z" finished-at="2017-08-31T11:38:43Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:43Z" finished-at="2017-08-31T12:27:43Z">
           <params>
             <param index="0">
               <value>
@@ -101,9 +101,11 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="1984" started-at="2017-08-31T11:38:43Z" description="Perform Login" finished-at="2017-08-31T11:38:45Z">
+        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="1804" started-at="2017-08-31T12:27:43Z" description="Perform Login" finished-at="2017-08-31T12:27:44Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:45Z" finished-at="2017-08-31T11:38:45Z">
+        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="970" started-at="2017-08-31T12:27:44Z" description="Fill in Transactions Details" finished-at="2017-08-31T12:27:45Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:44Z" finished-at="2017-08-31T12:27:44Z">
           <params>
             <param index="0">
               <value>
@@ -113,11 +115,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="1467" started-at="2017-08-31T11:38:45Z" description="Fill in Transactions Details" finished-at="2017-08-31T11:38:46Z">
-        </test-method>
-        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="5724" started-at="2017-08-31T11:38:46Z" description="Search for Transactions Details" finished-at="2017-08-31T11:38:52Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:46Z" finished-at="2017-08-31T11:38:46Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:45Z" finished-at="2017-08-31T12:27:45Z">
           <params>
             <param index="0">
               <value>
@@ -127,7 +125,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:52Z" finished-at="2017-08-31T11:38:52Z">
+        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="4576" started-at="2017-08-31T12:27:45Z" description="Search for Transactions Details" finished-at="2017-08-31T12:27:50Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T12:27:50Z" finished-at="2017-08-31T12:27:50Z">
           <params>
             <param index="0">
               <value>
@@ -137,9 +137,9 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="incrementValues()" name="incrementValues" duration-ms="1" started-at="2017-08-31T11:38:52Z" description="Increment values for Canister and Seal Number" finished-at="2017-08-31T11:38:52Z">
+        <test-method status="PASS" signature="incrementValues()" name="incrementValues" duration-ms="1" started-at="2017-08-31T12:27:50Z" description="Increment values for Canister and Seal Number" finished-at="2017-08-31T12:27:50Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-08-31T11:38:52Z" finished-at="2017-08-31T11:38:52Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="1" started-at="2017-08-31T12:27:50Z" finished-at="2017-08-31T12:27:50Z">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="326" started-at="2017-08-31T11:38:52Z" finished-at="2017-08-31T11:38:52Z">
+        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="223" started-at="2017-08-31T12:27:50Z" finished-at="2017-08-31T12:27:50Z">
         </test-method>
       </class>
     </test>

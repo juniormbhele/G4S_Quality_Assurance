@@ -211,61 +211,66 @@ public class CashOpsManualTransactions03
 		
 			try 
 			{
-				
-			
-				// Click the search button
-				WebElement search = driver.findElement(uimap.getLocator("search"));
-				search.click();
-				Thread.sleep(1000);
-			
-				// Click the search button
-				WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
-				ProcessManualTrans.click();
-				Thread.sleep(1000);
-				
-				// Fill in the transaction Date
-				WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
-				transactionDateStr.clear();
-				transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
-				
-				// Fill in the Card Details
-				WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
-				cardId.sendKeys(datafile.getData("cardId"));
+                // Click the search button
+                WebElement search = driver.findElement(uimap.getLocator("search"));
+                search.click();
+                Thread.sleep(1000);
 
-				
-				// Fill in the Vendor REF
-				WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
-				vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
-				
-				// Fill in the Client REF
-				WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
-				clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
+                // Click the search button
+                WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
+                ProcessManualTrans.click();
+                Thread.sleep(1000);
 
+                // Fill in the transaction Date
+                WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
+                transactionDateStr.clear();
+                transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
+
+                // Fill in the Card Details
+                WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
+                cardId.sendKeys(datafile.getData("cardId"));
+
+                // Fill in the Vendor REF
+                WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
+                vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
+
+                // Fill in the Client REF
+                WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
+                clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
+
+                // Fill in the First Count - R100 Notes
+                WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
+                FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
 
                 // Fill in the First Count - R200 Notes
-                WebElement FirstD200Notes = driver.findElement(uimap.getLocator("FirstD200Notes"));
-                FirstD200Notes.sendKeys(values.getData("FirstD200Notes"));
+                WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
+                FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
 
                 // Fill in the Second Count - R100 Notes
-                WebElement SecondD200Notes = driver.findElement(uimap.getLocator("SecondD200Notes"));
-                SecondD200Notes.sendKeys(values.getData("SecondD200Notes"));
+                WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
+                SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
 
+                // Fill in the First Count - R200 Notes
+                WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
+                SecondR200Notes.clear();
+                SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
 
                 // Fill in the First Count - Total
-				WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
-				firsttotal.clear();
-				firsttotal.sendKeys(values.getData("amount"));
-				
-				// Fill in the Second Count - Total
-				WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
-				secondtotal.clear();
-				secondtotal.sendKeys(values.getData("amount"));
-				
-				// Click Process Entry
-				WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
-				processEntry.click();
-			
-			TestNGResults.put("6",
+                WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
+                firsttotal.clear();
+                firsttotal.sendKeys(values.getData("amount"));
+
+                // Fill in the Second Count - Total
+                WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
+                secondtotal.clear();
+                secondtotal.sendKeys(values.getData("amount"));
+
+                // Click Process Entry
+                WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
+                processEntry.click();
+
+
+                TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
 			
@@ -346,49 +351,55 @@ public class CashOpsManualTransactions03
     @Test(description = "Increment values for Canister and Seal Number", priority = 7)
 	public void incrementValues() throws Exception 
 	{
-		int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
-		int sealNumber = Integer.parseInt(values.getData("sealNumber"));
-		int amount = Integer.parseInt(values.getData("amount"));
+        int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
+        int sealNumber = Integer.parseInt(values.getData("sealNumber"));
+        int amount = Integer.parseInt(values.getData("amount"));
 
-		int firstD200Notes = Integer.parseInt(values.getData("FirstD200Notes"));
+        int firstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
+        int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
+        int secondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
+        int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
 
-		int SecondD200Notes = Integer.parseInt(values.getData("SecondD200Notes"));
+        amount = amount + 10000;
 
-		
-		amount = amount + 10000;
-		
-		canisterNumber++;
-		sealNumber++;
-		
-		firstD200Notes = amount/200;
-        SecondD200Notes = amount/200;
-		
-		String CN = Integer.toString(canisterNumber);
-		String SN = Integer.toString(sealNumber);
-		String am = Integer.toString(amount);
-		
+        canisterNumber++;
+        sealNumber++;
 
-		String first200 = Integer.toString(firstD200Notes);
+        firstR200Notes = (amount/2)/200;
+        firstR100Notes = (amount/2)/100;
 
-		String second200 = Integer.toString(SecondD200Notes);
+        secondR200Notes = (amount/2)/200;
+        secondR100Notes = (amount/2)/100;
+
+        String CN = Integer.toString(canisterNumber);
+        String SN = Integer.toString(sealNumber);
+        String am = Integer.toString(amount);
+
+        String first100 = Integer.toString(firstR100Notes);
+        String first200 = Integer.toString(firstR200Notes);
+        String second100 = Integer.toString(secondR100Notes);
+        String second200 = Integer.toString(secondR200Notes);
+
 			try 
 			{
 				Properties properties = new Properties();
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\SCB\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\SCB\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\FNB\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\FNB\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
-		        properties.setProperty("canisterNumber", CN);
-				properties.setProperty("sealNumber",SN);
-				properties.setProperty("amount", am);
-				properties.setProperty("FirstD200Notes",first200);
-				properties.setProperty("SecondD200Notes",second200);
-				properties.store(out, null);
-		        out.close();
+                properties.setProperty("canisterNumber", CN);
+                properties.setProperty("sealNumber",SN);
+                properties.setProperty("amount", am);
+                properties.setProperty("FirstR100Notes",first100);
+                properties.setProperty("FirstR200Notes",first200);
+                properties.setProperty("SecondR100Notes",second100);
+                properties.setProperty("SecondR200Notes",second200);
+                properties.store(out, null);
+                out.close();
 			
 	           
 				
@@ -419,13 +430,13 @@ public class CashOpsManualTransactions03
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\SCB\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\FNB\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\SCB\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\FNB\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\SCB\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\FNB\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

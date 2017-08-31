@@ -53,4 +53,6 @@
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.URL"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
 </qualifiedTypeNameHistroy>

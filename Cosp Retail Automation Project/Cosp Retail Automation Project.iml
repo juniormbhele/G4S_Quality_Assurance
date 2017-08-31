@@ -17,7 +17,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="selenium-server-standalone-3.4.0.jar">
         <CLASSES>
           <root url="jar:////192.168.176.30/HomeDeposita/New folder (9)/Import Jar Files/selenium-server-standalone-3.4.0.jar!/" />
@@ -26,7 +26,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="winium-elements-desktop-0.1.0-1.jar">
         <CLASSES>
           <root url="jar://C:/Settings/Desktop Application Automation/winium-elements-desktop-0.1.0-1.jar!/" />
@@ -35,10 +35,19 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library name="winium-webdriver-0.1.0-1.jar">
         <CLASSES>
           <root url="jar://C:/Settings/Desktop Application Automation/winium-webdriver-0.1.0-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Selenium/jars/testng-6.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

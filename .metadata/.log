@@ -4430,3 +4430,86 @@ java.lang.InterruptedException
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-08-28 12:01:57.437 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-28 12:02:49.939
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sphiwe.mbhele'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.testng.eclipse 1 0 2017-08-28 12:03:29.512
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin \\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64718 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-1919647079\testng-customsuite.xml
+java -ea -classpath C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin:\\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar:C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar:C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar org.testng.remote.RemoteTestNG -serport 64718 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-1919647079\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-08-28 12:04:14.094
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin \\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 64739 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse--103165068\testng-customsuite.xml
+java -ea -classpath C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin:\\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar:C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar:C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar org.testng.remote.RemoteTestNG -serport 64739 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse--103165068\testng-customsuite.xml
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2017-08-28 12:08:17.274
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-08-28 12:08:17.274
+!MESSAGE session context was:(profile=C__Users_sphiwe.mbhele_eclipse_java-oxygen_eclipse, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.client,0.19.3.v20170801075239
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.model,0.19.3.v20170801075239
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,com.gradleware.tooling.utils,0.19.3.v20170801075239
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.branding,2.1.2.v20170807-1324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.core,2.1.2.v20170807-1324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.stsmigration,2.1.2.v20170807-1324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,org.eclipse.buildship.ui,2.1.2.v20170807-1324
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: osgi.bundle,org.gradle.toolingapi,3.5.0.v20170801075239
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2017-08-28 12:08:17.274
+!MESSAGE No repository found containing: org.eclipse.update.feature,org.eclipse.buildship,2.1.2.v20170807-1324
+
+!ENTRY org.testng.eclipse 1 0 2017-08-28 12:15:36.625
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin \\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65192 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-366638530\testng-customsuite.xml
+java -ea -classpath C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin:\\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar:C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar:C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar org.testng.remote.RemoteTestNG -serport 65192 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-366638530\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2017-08-28 12:16:54.695
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin \\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 65224 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-1259715703\testng-customsuite.xml
+java -ea -classpath C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng-remote.jar:C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\bin:\\192.168.176.30\HomeDeposita\New folder (9)\Import Jar Files\selenium-server-standalone-3.4.0.jar:C:\Settings\Desktop Application Automation\winium-elements-desktop-0.1.0-1.jar:C:\Settings\Desktop Application Automation\winium-webdriver-0.1.0-1.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\testng.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\jcommander.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\bsh-2.0b4.jar:C:\Users\sphiwe.mbhele\.p2\pool\plugins\org.testng.eclipse_6.11.0.201703011520\lib\snakeyaml.jar org.testng.remote.RemoteTestNG -serport 65224 -protocol json -d C:\Users\sphiwe.mbhele\eclipse-workspace\Cosp Retail Automation Project\test-output C:\Users\SPHIWE~1.MBH\AppData\Local\Temp\testng-eclipse-1259715703\testng-customsuite.xml
+!SESSION 2017-08-31 08:54:34.338 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_ZA
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-08-31 08:55:40.220
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sphiwe.mbhele'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

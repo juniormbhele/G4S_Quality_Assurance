@@ -2,24 +2,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="Failed suite [NedBank Manual Transactions]">
   <parameter name="host" value="1"/>
-  <test name="2(failed)" preserve-order="false">
+  <test name="1(failed)" preserve-order="false">
     <parameter name="host" value="1"/>
     <classes>
       <class name="com.g4s.nedbank.CashOpsManualTransactions01">
         <methods>
           <include name="suiteTearDown"/>
+          <include name="UsersTab"/>
           <include name="suiteSetUp"/>
+          <include name="SearchTrans"/>
           <include name="tearDown"/>
         </methods>
       </class>
       <class name="com.g4s.nedbank.CashOpsManualTransactions03">
         <methods>
           <include name="suiteSetUp"/>
-          <include name="SearchTrans"/>
-          <include name="DoLogin"/>
           <include name="suiteTearDown"/>
-          <include name="UsersTab"/>
-          <include name="authorize03"/>
           <include name="tearDown"/>
         </methods>
       </class>

@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3652" started-at="2017-08-21T08:53:45Z" finished-at="2017-08-21T08:53:48Z">
+  <suite name="Default suite" duration-ms="2863" started-at="2017-08-28T10:16:55Z" finished-at="2017-08-28T10:16:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3652" started-at="2017-08-21T08:53:45Z" finished-at="2017-08-21T08:53:48Z">
+    <test name="Default test" duration-ms="2863" started-at="2017-08-28T10:16:55Z" finished-at="2017-08-28T10:16:58Z">
       <class name="com.denty.cops.Login">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="beforeClass" is-config="true" duration-ms="3512" started-at="2017-08-21T10:53:45Z" finished-at="2017-08-21T10:53:48Z">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="beforeClass" is-config="true" duration-ms="2823" started-at="2017-08-28T12:16:55Z" finished-at="2017-08-28T12:16:58Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
@@ -26,7 +26,7 @@ Driver info: driver.version: WiniumDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
 	at org.openqa.selenium.winium.WiniumDriver.<init>(WiniumDriver.java:84)
-	at com.denty.cops.Login.beforeClass(Login.java:29)
+	at com.denty.cops.Login.beforeClass(Login.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -88,7 +88,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="login" duration-ms="0" started-at="2017-08-21T10:53:48Z" finished-at="2017-08-21T10:53:48Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="login" duration-ms="0" started-at="2017-08-28T12:16:58Z" finished-at="2017-08-28T12:16:58Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[org.apache.http.conn.HttpHostConnectException: Connect to localhost:9999 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
@@ -107,7 +107,7 @@ Driver info: driver.version: WiniumDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:236)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:137)
 	at org.openqa.selenium.winium.WiniumDriver.<init>(WiniumDriver.java:84)
-	at com.denty.cops.Login.beforeClass(Login.java:29)
+	at com.denty.cops.Login.beforeClass(Login.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -169,7 +169,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-21T10:53:48Z" finished-at="2017-08-21T10:53:48Z">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:com.denty.cops.Login@32d992b2]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-08-28T12:16:58Z" finished-at="2017-08-28T12:16:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

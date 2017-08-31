@@ -360,6 +360,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="org.testng.TESTNG_CONTAINER" level="application" />
     <orderEntry type="module-library">
       <library name="poi-3.9.jar">
         <CLASSES>

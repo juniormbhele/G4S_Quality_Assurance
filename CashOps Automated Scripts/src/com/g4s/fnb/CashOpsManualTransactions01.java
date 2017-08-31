@@ -216,62 +216,68 @@ public class CashOpsManualTransactions01
 		
 			try 
 			{
-				
-			
-				// Click the search button
-				WebElement search = driver.findElement(uimap.getLocator("search"));
-				search.click();
-				Thread.sleep(1000);
 
-				// Click the search button
-				WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
-				ProcessManualTrans.click();
-				Thread.sleep(1000);
+                // Click the search button
+                WebElement search = driver.findElement(uimap.getLocator("search"));
+                search.click();
+                Thread.sleep(1000);
 
-				// Fill in the transaction Date
-				WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
-				transactionDateStr.clear();
-				transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
+                // Click the search button
+                WebElement ProcessManualTrans = driver.findElement(uimap.getLocator("ProcessManualTrans"));
+                ProcessManualTrans.click();
+                Thread.sleep(1000);
 
-				// Fill in the Card Details
-				WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
-				cardId.sendKeys(datafile.getData("cardId"));
+                // Fill in the transaction Date
+                WebElement transactionDateStr = driver.findElement(uimap.getLocator("transactionDateStr"));
+                transactionDateStr.clear();
+                transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
 
-				// Fill in the Vendor REF
-				WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
-				vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
+                // Fill in the Card Details
+                WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
+                cardId.sendKeys(datafile.getData("cardId"));
 
-				// Fill in the Client REF
-				WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
-				clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
+                // Fill in the Vendor REF
+                WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
+                vendorSettlementReference.sendKeys(datafile.getData("vendorSettlementReference"));
+
+                // Fill in the Client REF
+                WebElement clientSettlementReference = driver.findElement(uimap.getLocator("clientSettlementReference"));
+                clientSettlementReference.sendKeys(datafile.getData("clientSettlementReference"));
+
+                // Fill in the First Count - R100 Notes
+                WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
+                FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
+
+                // Fill in the First Count - R200 Notes
+                WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
+                FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
+
+                // Fill in the Second Count - R100 Notes
+                WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
+                SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
+
+                // Fill in the First Count - R200 Notes
+                WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
+                SecondR200Notes.clear();
+                SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
+
+                // Fill in the First Count - Total
+                WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
+                firsttotal.clear();
+                firsttotal.sendKeys(values.getData("amount"));
+
+                // Fill in the Second Count - Total
+                WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
+                secondtotal.clear();
+                secondtotal.sendKeys(values.getData("amount"));
+
+                // Click Process Entry
+                WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
+                processEntry.click();
 
 
 
-				// Fill in the First Count - R200 Notes
-				WebElement FirstD200Notes = driver.findElement(uimap.getLocator("FirstD200Notes"));
-                FirstD200Notes.sendKeys(values.getData("FirstD200Notes"));
-
-				// Fill in the Second Count - R100 Notes
-				WebElement SecondD200Notes = driver.findElement(uimap.getLocator("SecondD200Notes"));
-                SecondD200Notes.sendKeys(values.getData("SecondD200Notes"));
-
-
-				// Fill in the First Count - Total
-				WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
-				firsttotal.clear();
-				firsttotal.sendKeys(values.getData("amount"));
-
-				// Fill in the Second Count - Total
-				WebElement secondtotal = driver.findElement(uimap.getLocator("secondtotal"));
-				secondtotal.clear();
-				secondtotal.sendKeys(values.getData("amount"));
-
-				// Click Process Entry
-				WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
-				processEntry.click();
-
-			
-			TestNGResults.put("6",
+                TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
 			
@@ -365,13 +371,13 @@ public class CashOpsManualTransactions01
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\SCB\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\FNB\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\SCB\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\FNB\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\SCB\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\FNB\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

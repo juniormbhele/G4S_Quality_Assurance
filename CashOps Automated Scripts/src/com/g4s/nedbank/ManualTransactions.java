@@ -14,12 +14,12 @@ public class ManualTransactions
 		{
             try {
 
-                for(int i=0;i<5;i++)
+                for(int i=0;i<2;i++)
                 {
                 List<String> suites = new ArrayList<String>();
 
                 workingDir = System.getProperty("user.dir");
-                suites.add(workingDir+"\\Resources\\SCB\\TestSuiteSCB.xml"); //path of .xml file to be run-provide complete path
+                suites.add(workingDir+"\\Resources\\NedBank\\TestSuiteNedBank.xml"); //path of .xml file to be run-provide complete path
 
                 TestNG test = new TestNG();
                 test.setTestSuites(suites);
