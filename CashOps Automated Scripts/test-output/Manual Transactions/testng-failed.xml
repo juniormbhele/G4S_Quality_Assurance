@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Manual Transactions]">
+  <parameter name="host" value="1"/>
+  <test name="2(failed)" preserve-order="false">
+    <parameter name="host" value="1"/>
+    <classes>
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions01">
+        <methods>
+          <include name="suiteTearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions03">
+        <methods>
+          <include name="authorize03"/>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

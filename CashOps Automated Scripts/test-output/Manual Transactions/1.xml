@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DS-SYS-SPM-LT1" name="com.g4s.com.g4s.scb.CashOpsManualTransactions01" tests="6" failures="0" timestamp="31 Aug 2017 07:27:40 GMT" time="20.252" errors="0">
+  <testcase name="LaunchWebsite" time="4.573" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+  <testcase name="FillLoginDetails" time="0.49" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+  <testcase name="DoLogin" time="3.751" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+  <testcase name="UsersTab" time="0.92" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+  <testcase name="SearchTrans" time="4.574" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+  <testcase name="authorize01" time="3.708" classname="com.g4s.com.g4s.scb.CashOpsManualTransactions01"/>
+</testsuite>
