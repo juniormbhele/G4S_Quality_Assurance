@@ -11,7 +11,7 @@ public class Util
 
 		// Valid account for login
 		public static final String USER_NAME = "Junior.Mbhele";
-		public static final String PASSWD = "Junior100@";
+		public static final String PASSWD = "frkKx0Hw";
 		
 		// inalid account for login
 			public static final String Wrong_USER_NAME = "Junior.Malabola";

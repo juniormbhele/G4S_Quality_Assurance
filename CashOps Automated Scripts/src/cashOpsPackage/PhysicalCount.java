@@ -1,33 +1,32 @@
 package cashOpsPackage;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeTest;
-
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import java.util.concurrent.TimeUnit;
 
 public class PhysicalCount 
 {
 	
 	static WebDriver driver;
 	String cITClientID = "1002"	;
-	double expectedAmount = 1000;
-	double count1 = 1000;
-	String RemovalDate = "25/07/2017";
-	String BankedDate = "27/07/2017";
-	int CanisterNumber =855620;
-	String DepositReference = "'REF:JNR Count 2";
+	double expectedAmount = 30000;
+	double count1 = 30000;
+	String RemovalDate = "02/09/2017";
+	String BankedDate = "02/09/2017";
+	int CanisterNumber =610043;
+	String DepositReference = "'REF:JNR Count 001";
 	String CashCentreName = "000 SBV Capitec Bedfordview";
 	int BinSealNumber = 12001;
-	int SealNumber = 130002;
+	int SealNumber = 523718;
 	String CurrencyCode = "ZAR (South Africa)"; 
 	
 	String ManagerUsername = "Junior.Bedfordview";
-	String ManagerPassword = "Junior100@";
+	String ManagerPassword = "Y7lMfpgH";
 	
 	String baseUrl ;
   @Test
@@ -47,7 +46,7 @@ public class PhysicalCount
 	  driver.findElement(By.name("submit")).click();
 	  
 	  
-	  for (int i = 0; i < 10; i++) 
+	  for (int i = 0; i < 50; i++)
 	  {
 		  
 		  
@@ -109,7 +108,7 @@ public class PhysicalCount
   {
 	  	System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
-		// Step 1 Goto http://live.guru99.com/
+
 	    baseUrl = "https://41.21.131.56/deposita/physicalCountSearch.do";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.manage().window().maximize();

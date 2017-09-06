@@ -53,7 +53,7 @@ public class CashOpsManualTransactions03
 	{
 	try 
 	{
-	driver.get("https://41.21.131.56/deposita/searchManualTransactions.do");
+	driver.get("https://uat.cashops.deposita.co.za/deposita/searchManualTransactions.do");
 	Thread.sleep(1000);
 	
 	driver.manage().window().maximize();
@@ -284,14 +284,14 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-    /*@Test(description = "Authorize 03 transactions", priority = 6, enabled = false)
+    @Test(description = "Authorize 03 transactions", priority = 6, enabled = false)
     public void authorize03() throws Exception
     {
 
         try
         {
             //Navigate to the authorization screen
-            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
+            driver.get("https://uat.cashops.deposita.co.za/deposita/authoriseTransactions.do");
 
             // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
@@ -340,7 +340,7 @@ public class CashOpsManualTransactions03
             Assert.assertTrue(false);
 
         }
-    }*/
+    }
 
     @Test(description = "Increment values for Canister and Seal Number", priority = 6)
 	public void incrementValues() throws Exception 

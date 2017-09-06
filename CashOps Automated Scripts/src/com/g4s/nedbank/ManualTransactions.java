@@ -10,12 +10,12 @@ public class ManualTransactions
 
 	public static String workingDir;
 
-		public static void main (String[] args)
-		{
-            try {
+    public static void loopTrans(int count)
+    {
+        try {
 
-                for(int i=0;i<2;i++)
-                {
+            for(int i=0;i<count;i++)
+            {
                 List<String> suites = new ArrayList<String>();
 
                 workingDir = System.getProperty("user.dir");
@@ -26,11 +26,41 @@ public class ManualTransactions
 
                 //run test suite
                 test.run();
-}
-            } catch (Exception e)
-            {
-                e.printStackTrace();
             }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public static void Auth(int count)
+    {
+        try {
+
+            for(int i=0;i<count;i++)
+            {
+                List<String> suites = new ArrayList<String>();
+
+                workingDir = System.getProperty("user.dir");
+                suites.add(workingDir+"\\Resources\\NedBank\\AuthorizeNedbank.xml"); //path of .xml file to be run-provide complete path
+
+                TestNG test = new TestNG();
+                test.setTestSuites(suites);
+
+                //run test suite
+                test.run();
+            }
+        } catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+		public static void main(String[] args)
+		{
+            Auth(1);
+
+
         }
 	
 
