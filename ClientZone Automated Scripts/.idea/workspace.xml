@@ -1,379 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e71757e-359c-4de6-a5a0-a93f786cd6f7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/NedBank/AuthorizeNedbank.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/AuthorizeTransactions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/.idea/runConfigurations/AuthorizeTransactions.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/TestGrid.java" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089471431.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089473957.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089479204.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089480336.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089485672.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089489432.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089500508.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089501354.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089503364.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089504527.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089509922.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089514127.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089592556.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089593104.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089622377.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089623244.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089625261.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089626330.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089631348.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089635225.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089906489.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089907381.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089911479.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089912489.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089946203.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089946837.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089948700.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504089949758.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090614810.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090615593.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090619545.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090620841.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090635607.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090646632.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090647962.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090650311.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504090651675.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091764478.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091765332.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091769423.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091770649.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091794910.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091795597.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091797797.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091799177.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091940154.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091940837.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091944832.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091945928.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091951024.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091954986.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091966208.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091966982.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091968982.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504091970223.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092087055.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092087759.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092091671.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092092802.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092097763.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092101599.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092111298.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092111849.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092113630.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092114642.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092711950.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092712836.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092716789.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092718242.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092723018.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092726875.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092741542.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092742093.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092743877.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092744799.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092749524.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092830839.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092831374.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092835975.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092837173.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092851369.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092855940.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092864793.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092865311.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092868037.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092869060.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092873342.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092996513.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504092997035.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093001074.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093002011.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093009643.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093013478.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093022163.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093022695.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093024627.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093025564.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093030339.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093106750.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093107329.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093111156.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093112788.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093118194.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093122332.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093130922.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093131446.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093133177.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093134137.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093138379.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093200814.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093201393.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093205290.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093206232.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093210850.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093214480.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093224462.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093224981.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093226875.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093227858.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093266063.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093266758.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093270570.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093271501.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093294314.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093294831.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093298367.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093299777.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093688005.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093688529.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093692311.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093693286.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093715553.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093716112.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093717925.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504093718854.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105087045.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105087726.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105093826.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105094878.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105100461.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105104077.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105113695.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105114210.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105116006.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105116907.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105300490.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105301410.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105305561.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105306638.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105332453.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105332983.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105334692.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105335624.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105389404.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105389930.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105393728.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105394797.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105399839.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105403401.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105414759.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105415350.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105417195.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504105418211.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163565035.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163566025.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163571020.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163572188.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163578311.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163582023.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163595670.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163596177.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163598790.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163599660.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163666555.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163667066.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163670960.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163671909.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163696387.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163696913.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163698840.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163699783.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163704693.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163722782.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163723354.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163727199.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163728090.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163732907.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163736481.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163746036.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163746538.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163748368.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163749309.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163753682.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163772936.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163773458.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163777219.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163778147.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163783060.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163786623.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163796847.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163797442.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163799279.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163800225.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163804805.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163822121.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163822673.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163826434.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163827441.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163831919.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163835552.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163844588.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163845186.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163846982.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163847963.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163853059.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163869063.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163869602.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163873384.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163874361.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163879010.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163882708.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163892776.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163893319.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163895107.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163896073.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504163901081.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164014472.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164015012.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164018781.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164019655.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164025723.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164029814.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164039530.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164040030.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164041813.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164042720.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164046915.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164065744.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164066218.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164070171.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164071018.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164076806.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164080445.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164091060.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164091552.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164094713.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164095768.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164100544.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164115107.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164115617.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164119423.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164120356.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164125042.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164128563.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164136565.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164137066.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164138781.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164139654.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164143917.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164158283.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164158771.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164162480.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164163350.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164167757.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164171314.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164179649.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164180126.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164181860.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164182957.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164187052.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164202143.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164202634.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164206362.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164207480.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164212390.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164215901.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164224071.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164224551.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164226321.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164227175.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164231643.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164259933.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164260459.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164264222.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164265120.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164270076.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164273641.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164283115.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164283654.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164285431.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164286317.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164290528.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164306905.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164307392.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164311101.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164311982.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164317065.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164320591.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164330241.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164330792.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164332486.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164333369.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164340238.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164356140.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164356694.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164360426.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164361344.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164366108.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164369694.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164381607.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164382109.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164384009.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164384957.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164389078.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164404224.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164404739.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164408494.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164409358.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164413887.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164417330.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164425332.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164425832.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164427583.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164428586.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164432990.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164447182.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164447671.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164451424.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164452343.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164456918.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164460626.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164471547.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164472145.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164473916.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164474955.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\CashOps Automated Scripts\Screenshots\Passed\1504164479430.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\ClientZone Automated Scripts.zip" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\ClientZone Automated Scripts\Manual Transactions.xls" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\ClientZone Automated Scripts\Verify Card Name Editor Login.xls" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\sphiwe.mbhele\eclipse-workspace\ClientZone Automated Scripts\Verify User Login.xls" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts.zip" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/DoLogin.png" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/DoLogin.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/SearchTrans.png" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/SearchTrans.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/UsersTab.png" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/UsersTab.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/authorize01.png" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/authorize01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/authorize03.png" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Screenshots/Failed/authorize03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/CashOps Automated Scripts.iml" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/CashOps Automated Scripts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/CashOpsManualTransactions01.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/CashOpsManualTransactions01.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/CashOpsManualTransactions03.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/CashOpsManualTransactions03.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientZone Automated Scripts.iml" afterPath="$PROJECT_DIR$/ClientZone Automated Scripts.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/com/g4s/scb/ManualTransactions.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/com/g4s/scb/ManualTransactions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/fnb/ManualTransactions.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/fnb/ManualTransactions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/ManualTransactions.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/com/g4s/nedbank/ManualTransactions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/.idea/runConfigurations/NedBank_Client_Messages_Test.xml" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/.idea/runConfigurations/NedBank_Client_Messages_Test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/cashOpsPackage/PhysicalCount.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/cashOpsPackage/PhysicalCount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/src/cashOpsPackage/Util.java" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/src/cashOpsPackage/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/FNB/datafile.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/FNB/datafile.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/NedBank/datafile.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/NedBank/datafile.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/SCB/datafile.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/SCB/datafile.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/test-output/testng-results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/FNB/values.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/FNB/values.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/NedBank/values.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/NedBank/values.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/SCB/values.properties" afterPath="$PROJECT_DIR$/../CashOps Automated Scripts/Resources/SCB/values.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="0e71757e-359c-4de6-a5a0-a93f786cd6f7" name="Default" comment="" />
     <ignored path="ClientZone Automated Scripts.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -413,8 +41,8 @@
       <file leaf-file-name="AddUserjavaTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/clientZone/AddUserjavaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.02560241" vertical-offset="680" max-vertical-offset="1394">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.64006025" vertical-offset="680" max-vertical-offset="1394">
+              <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="e#901#902#0" expanded="true" />
                 <element signature="e#935#936#0" expanded="true" />
@@ -641,12 +269,12 @@
       <updated>1504681845625</updated>
       <workItem from="1504681858747" duration="1431000" />
       <workItem from="1504697975373" duration="909000" />
-      <workItem from="1504701802132" duration="567000" />
+      <workItem from="1504701802132" duration="574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2907000" />
+    <option name="totallyTimeSpent" value="2914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1552" height="850" extended-state="6" />
@@ -664,7 +292,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31434315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31434315" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -756,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clientZone/AddUserjavaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.02560241" vertical-offset="680" max-vertical-offset="1394">
-          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.64006025" vertical-offset="680" max-vertical-offset="1394">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="e#901#902#0" expanded="true" />
             <element signature="e#935#936#0" expanded="true" />

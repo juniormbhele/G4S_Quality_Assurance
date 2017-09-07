@@ -1,4 +1,4 @@
-package com.g4s.fnb;
+package org.deposita.autoPax;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -242,18 +242,12 @@ public class CashOpsManualTransactions03
                 WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
                 FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
-                FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
 
                 // Fill in the Second Count - R100 Notes
                 WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
                 SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
-                SecondR200Notes.clear();
-                SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
+
 
                 // Fill in the First Count - Total
                 WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
@@ -270,7 +264,7 @@ public class CashOpsManualTransactions03
                 processEntry.click();
 
 
-                TestNGResults.put("6",
+			TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
 			
@@ -290,7 +284,7 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-    @Test(description = "Authorize 03 transactions", priority = 6)
+    @Test(description = "Authorize 03 transactions", priority = 6, enabled = false)
     public void authorize03() throws Exception
     {
 
@@ -348,37 +342,36 @@ public class CashOpsManualTransactions03
         }
     }
 
-    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
+    @Test(description = "Increment values for Canister and Seal Number", priority = 6)
 	public void incrementValues() throws Exception 
 	{
         int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
         int sealNumber = Integer.parseInt(values.getData("sealNumber"));
         int amount = Integer.parseInt(values.getData("amount"));
 
-        int firstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
+
         int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
-        int secondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
         int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
 
-        amount = amount + 800;
+        amount = amount + 100;
 
         canisterNumber++;
         sealNumber++;
 
-        firstR200Notes = (amount/2)/200;
-        firstR100Notes = (amount/2)/100;
 
-        secondR200Notes = (amount/2)/200;
-        secondR100Notes = (amount/2)/100;
+        firstR100Notes = amount/100;
+
+
+        secondR100Notes = amount/100;
 
         String CN = Integer.toString(canisterNumber);
         String SN = Integer.toString(sealNumber);
         String am = Integer.toString(amount);
 
         String first100 = Integer.toString(firstR100Notes);
-        String first200 = Integer.toString(firstR200Notes);
+
         String second100 = Integer.toString(secondR100Notes);
-        String second200 = Integer.toString(secondR200Notes);
+
 
 			try 
 			{
@@ -386,8 +379,8 @@ public class CashOpsManualTransactions03
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\FNB\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\FNB\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\NedBank\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\NedBank\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -395,9 +388,7 @@ public class CashOpsManualTransactions03
                 properties.setProperty("sealNumber",SN);
                 properties.setProperty("amount", am);
                 properties.setProperty("FirstR100Notes",first100);
-                properties.setProperty("FirstR200Notes",first200);
                 properties.setProperty("SecondR100Notes",second100);
-                properties.setProperty("SecondR200Notes",second200);
                 properties.store(out, null);
                 out.close();
 			
@@ -430,13 +421,13 @@ public class CashOpsManualTransactions03
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\FNB\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\NedBank\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\FNB\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\NedBank\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\FNB\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\NedBank\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

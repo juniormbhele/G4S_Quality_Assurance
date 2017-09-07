@@ -1,4 +1,4 @@
-package com.g4s.fnb;
+package org.deposita.autoPax;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -19,11 +19,17 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions03 
+public class CashOpsManualTransactions01
 
 {
 	public WebDriver driver;
@@ -43,7 +49,6 @@ public class CashOpsManualTransactions03
 	
 	// Declare A Map Object To Hold TestNG Results
 	Map<String, Object[]> TestNGResults;
-
 	public static String driverPath = null;
 	
 	
@@ -59,7 +64,7 @@ public class CashOpsManualTransactions03
 	driver.manage().window().maximize();
 	TestNGResults.put("2", new Object[] { 1d, "Navigate to CashOps Manual Transactions", "Site gets opened", "Pass" });
 	
-	Thread.sleep(1000);
+
 	// Take screenshot and store as a file format
 	File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	
@@ -90,7 +95,7 @@ public class CashOpsManualTransactions03
 			// Get the password element
 			WebElement password = driver.findElement(uimap.getLocator("CO_Password_field"));
 			password.sendKeys(datafile.getData("CO_password"));
-			
+	
 			
 			TestNGResults.put("3", new Object[] { 2d, "Fill Login form data (Username/Password)",
 			"Login details gets filled", "Pass" });
@@ -100,7 +105,7 @@ public class CashOpsManualTransactions03
 			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
 			// now copy the  screenshot to desired location using copyFile //method
-			workingDir = System.getProperty("user.dir");
+                workingDir = System.getProperty("user.dir");
 			FileUtils.copyFile(src, new File(workingDir+"\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
 			} catch (Exception e) 
 			{
@@ -125,11 +130,11 @@ public class CashOpsManualTransactions03
 	
 			TestNGResults.put("4",
 			new Object[] { 3d, "Click Login and verify welcome message", "Login success", "Pass" });
-			
+			Thread.sleep(1000);
 			
 			// Take screenshot and store as a file format
 			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
+			Thread.sleep(1000);
 						
 			// now copy the  screenshot to desired location using copyFile //method
                 workingDir = System.getProperty("user.dir");
@@ -154,7 +159,7 @@ public class CashOpsManualTransactions03
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -211,7 +216,7 @@ public class CashOpsManualTransactions03
 		
 			try 
 			{
-                // Click the search button
+                 // Click the search button
                 WebElement search = driver.findElement(uimap.getLocator("search"));
                 search.click();
                 Thread.sleep(1000);
@@ -242,18 +247,10 @@ public class CashOpsManualTransactions03
                 WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
                 FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
-                FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
-
                 // Fill in the Second Count - R100 Notes
                 WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
                 SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
-                SecondR200Notes.clear();
-                SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
 
                 // Fill in the First Count - Total
                 WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
@@ -268,9 +265,8 @@ public class CashOpsManualTransactions03
                 // Click Process Entry
                 WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
                 processEntry.click();
-
-
-                TestNGResults.put("6",
+			
+			TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
 			
@@ -290,8 +286,8 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-    @Test(description = "Authorize 03 transactions", priority = 6)
-    public void authorize03() throws Exception
+@Test(description = "Authorize 01 transactions", priority = 6, enabled = false)
+    public void authorize01() throws Exception
     {
 
         try
@@ -299,14 +295,14 @@ public class CashOpsManualTransactions03
             //Navigate to the authorization screen
             driver.get("https://uat.cashops.deposita.co.za/deposita/authoriseTransactions.do");
 
-            // Fill in the transaction from Date
+        // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
             transactionDateStr.clear();
             transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
 
-            // Fill in the Transaction Type - 03
+            // Fill in the Transaction Type - 01
             WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
-            TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField"));
 
             // Fill in the Canister Number
             WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -329,7 +325,7 @@ public class CashOpsManualTransactions03
 
 
             TestNGResults.put("6",
-                    new Object[]{6d, "Authorize 03 transaction", "03 Transaction should be authorized", "Pass"});
+                    new Object[]{6d, "Authorize 01 transaction", "01 Transaction should be authorized", "Pass"});
 
 
             // Take screenshot and store as a file format
@@ -342,80 +338,14 @@ public class CashOpsManualTransactions03
         catch (Exception e)
         {
             TestNGResults.put("5",
-                    new Object[] { 6d, "Authorize 03 transaction","03 Transaction should be authorized", "Fail" });
+                    new Object[] { 6d, "Authorize 01 transaction","01 Transaction should be authorized", "Fail" });
             Assert.assertTrue(false);
 
         }
     }
 
-    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
-	public void incrementValues() throws Exception 
-	{
-        int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
-        int sealNumber = Integer.parseInt(values.getData("sealNumber"));
-        int amount = Integer.parseInt(values.getData("amount"));
 
-        int firstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
-        int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
-        int secondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
-        int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
-
-        amount = amount + 800;
-
-        canisterNumber++;
-        sealNumber++;
-
-        firstR200Notes = (amount/2)/200;
-        firstR100Notes = (amount/2)/100;
-
-        secondR200Notes = (amount/2)/200;
-        secondR100Notes = (amount/2)/100;
-
-        String CN = Integer.toString(canisterNumber);
-        String SN = Integer.toString(sealNumber);
-        String am = Integer.toString(amount);
-
-        String first100 = Integer.toString(firstR100Notes);
-        String first200 = Integer.toString(firstR200Notes);
-        String second100 = Integer.toString(secondR100Notes);
-        String second200 = Integer.toString(secondR200Notes);
-
-			try 
-			{
-				Properties properties = new Properties();
-				
-				
-				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\FNB\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\FNB\\values.properties");
-		      
-		        properties.load(in);
-		        //in.close();
-                properties.setProperty("canisterNumber", CN);
-                properties.setProperty("sealNumber",SN);
-                properties.setProperty("amount", am);
-                properties.setProperty("FirstR100Notes",first100);
-                properties.setProperty("FirstR200Notes",first200);
-                properties.setProperty("SecondR100Notes",second100);
-                properties.setProperty("SecondR200Notes",second200);
-                properties.store(out, null);
-                out.close();
-			
-	           
-				
-			} 
-			catch (Exception e) 
-			{
-			
-			Assert.assertTrue(false);
-			System.out.println(e.getStackTrace());
-			}
-	}
-	
-	
-	
-	
-	@BeforeClass(alwaysRun = true)
+    @BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
 	{
 			// create a new work book
@@ -430,13 +360,13 @@ public class CashOpsManualTransactions03
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\FNB\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\NedBank\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\FNB\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\NedBank\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\FNB\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\NedBank\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.
@@ -508,10 +438,9 @@ public class CashOpsManualTransactions03
 		 
 		// Copy files to specific location here it will save all screenshot in our project home directory and
 		// result.getName() will return name of test case so that screenshot name will be same
-            workingDir = System.getProperty("user.dir");
-		FileUtils.copyFile(source, new File(workingDir+"./Screenshots/Failed/"+result.getName()+".png"));
+		FileUtils.copyFile(source, new File("./Screenshots/Failed/"+result.getName()+".png"));
 		 
-		System.out.println(result.getName()+" Failed, Screenshot taken");
+		System.out.println("Screenshot taken");
 		} 
 		catch (Exception e)
 		{

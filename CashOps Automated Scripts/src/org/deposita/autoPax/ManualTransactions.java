@@ -1,4 +1,4 @@
-package com.g4s.nedbank;
+package org.deposita.autoPax;
 
 import org.testng.TestNG;
 
@@ -58,7 +58,7 @@ public class ManualTransactions
 
 		public static void main(String[] args)
 		{
-            Auth(10);
+            Auth(3);
 
 
         }
