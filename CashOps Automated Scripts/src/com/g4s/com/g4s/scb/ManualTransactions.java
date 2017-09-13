@@ -14,7 +14,7 @@ public class ManualTransactions
 		{
             try {
 
-                for(int i=0;i<6;i++)
+                for(int i=0;i<3;i++)
                 {
                 List<String> suites = new ArrayList<String>();
 

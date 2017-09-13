@@ -57,8 +57,8 @@ public class ManualTransactions
     }
 
 		public static void main(String[] args)
-		{
-            Auth(10);
+        {
+            loopTrans(4);
 
 
         }

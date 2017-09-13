@@ -8,12 +8,13 @@
        </class>
     </classes>
   </test>
-  <test name="2">
-  <parameter name="host" value="1" />
-    <classes>
-       <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions03">
-       </class>
-    </classes>
-  </test>
+
+    <test name="2">
+        <parameter name="host" value="1" />
+        <classes>
+            <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions03">
+            </class>
+        </classes>
+    </test>
   
  </suite>

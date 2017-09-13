@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [NedBank Authorize Transactions]">
+<suite thread-count="3" name="Failed suite [ SCB Manual Transactions]">
   <parameter name="host" value="1"/>
   <test name="1(failed)" preserve-order="false">
     <parameter name="host" value="1"/>
     <classes>
-      <class name="com.g4s.nedbank.AuthorizeTransactions">
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions01">
+        <methods>
+          <include name="suiteTearDown"/>
+          <include name="authorize01"/>
+          <include name="suiteSetUp"/>
+          <include name="SearchTrans"/>
+          <include name="tearDown"/>
+        </methods>
+      </class>
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions03">
         <methods>
           <include name="suiteSetUp"/>
-          <include name="authorize01"/>
           <include name="suiteTearDown"/>
           <include name="tearDown"/>
         </methods>

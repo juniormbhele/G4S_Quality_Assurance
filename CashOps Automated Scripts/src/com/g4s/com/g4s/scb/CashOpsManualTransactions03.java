@@ -355,7 +355,7 @@ public class CashOpsManualTransactions03
 		int SecondD200Notes = Integer.parseInt(values.getData("SecondD200Notes"));
 
 		
-		amount = amount + 10000;
+		amount = amount + 1000;
 		
 		canisterNumber++;
 		sealNumber++;

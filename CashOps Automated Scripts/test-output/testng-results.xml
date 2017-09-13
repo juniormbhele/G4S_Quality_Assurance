@@ -1,75 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="NedBank Authorize Transactions" duration-ms="28400" started-at="2017-09-07T15:27:11Z" finished-at="2017-09-07T15:27:39Z">
+  <suite name=" SCB Manual Transactions" duration-ms="62074" started-at="2017-09-12T16:54:04Z" finished-at="2017-09-12T16:55:06Z">
     <groups>
     </groups>
-    <test name="1" duration-ms="28400" started-at="2017-09-07T15:27:11Z" finished-at="2017-09-07T15:27:39Z">
-      <class name="com.g4s.nedbank.AuthorizeTransactions">
-        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="4278" started-at="2017-09-07T15:27:11Z" finished-at="2017-09-07T15:27:15Z">
+    <test name="1" duration-ms="27403" started-at="2017-09-12T16:54:04Z" finished-at="2017-09-12T16:54:32Z">
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions01">
+        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="4288" started-at="2017-09-12T16:54:04Z" finished-at="2017-09-12T16:54:08Z">
         </test-method>
-        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="11600" started-at="2017-09-07T15:27:15Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-09-07T15:27:27Z">
+        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="7523" started-at="2017-09-12T16:54:08Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-09-12T16:54:16Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-07T15:27:27Z" finished-at="2017-09-07T15:27:27Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="1" started-at="2017-09-12T16:54:16Z" finished-at="2017-09-12T16:54:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: LaunchWebsite STATUS:SUCCESS METHOD:com.g4s.nedbank.AuthorizeTransactions.LaunchWebsite()]
+                <![CDATA[[TestResult: LaunchWebsite STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.LaunchWebsite()]
 ]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="622" started-at="2017-09-07T15:27:27Z" description="Fill the Login Details" finished-at="2017-09-07T15:27:27Z">
+        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="680" started-at="2017-09-12T16:54:16Z" description="Fill the Login Details" finished-at="2017-09-12T16:54:17Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-07T15:27:27Z" finished-at="2017-09-07T15:27:27Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:17Z" finished-at="2017-09-12T16:54:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: FillLoginDetails STATUS:SUCCESS METHOD:com.g4s.nedbank.AuthorizeTransactions.FillLoginDetails()]
+                <![CDATA[[TestResult: FillLoginDetails STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.FillLoginDetails()]
 ]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="3897" started-at="2017-09-07T15:27:27Z" description="Perform Login" finished-at="2017-09-07T15:27:31Z">
+        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="3871" started-at="2017-09-12T16:54:17Z" description="Perform Login" finished-at="2017-09-12T16:54:20Z">
         </test-method>
-        <test-method status="PASS" signature="authorize01()" name="authorize01" duration-ms="4069" started-at="2017-09-07T15:27:31Z" description="Authorize 01 transactions" finished-at="2017-09-07T15:27:35Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-07T15:27:31Z" finished-at="2017-09-07T15:27:31Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:20Z" finished-at="2017-09-12T16:54:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: DoLogin STATUS:SUCCESS METHOD:com.g4s.nedbank.AuthorizeTransactions.DoLogin()]
+                <![CDATA[[TestResult: DoLogin STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.DoLogin()]
 ]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="authorize03()" name="authorize03" duration-ms="3692" started-at="2017-09-07T15:27:35Z" description="Authorize 03 transactions" finished-at="2017-09-07T15:27:39Z">
+        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="1264" started-at="2017-09-12T16:54:20Z" description="Fill in Transactions Details" finished-at="2017-09-12T16:54:22Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-07T15:27:35Z" finished-at="2017-09-07T15:27:35Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:22Z" finished-at="2017-09-12T16:54:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: authorize01 STATUS:SUCCESS METHOD:com.g4s.nedbank.AuthorizeTransactions.authorize01()]
+                <![CDATA[[TestResult: UsersTab STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.UsersTab()]
 ]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="240" started-at="2017-09-07T15:27:39Z" finished-at="2017-09-07T15:27:39Z">
+        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="5561" started-at="2017-09-12T16:54:22Z" description="Search for Transactions Details" finished-at="2017-09-12T16:54:27Z">
         </test-method>
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-07T15:27:39Z" finished-at="2017-09-07T15:27:39Z">
+        <test-method status="PASS" signature="authorize01()" name="authorize01" duration-ms="3998" started-at="2017-09-12T16:54:27Z" description="Authorize 01 transactions" finished-at="2017-09-12T16:54:31Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:27Z" finished-at="2017-09-12T16:54:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: authorize03 STATUS:SUCCESS METHOD:com.g4s.nedbank.AuthorizeTransactions.authorize03()]
+                <![CDATA[[TestResult: SearchTrans STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.SearchTrans()]
 ]]>
               </value>
             </param>
           </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:31Z" finished-at="2017-09-12T16:54:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: authorize01 STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions01.authorize01()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="214" started-at="2017-09-12T16:54:31Z" finished-at="2017-09-12T16:54:32Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="2" duration-ms="34655" started-at="2017-09-12T16:54:32Z" finished-at="2017-09-12T16:55:06Z">
+      <class name="com.g4s.com.g4s.scb.CashOpsManualTransactions03">
+        <test-method status="PASS" signature="suiteSetUp()" name="suiteSetUp" is-config="true" duration-ms="3661" started-at="2017-09-12T16:54:32Z" finished-at="2017-09-12T16:54:35Z">
+        </test-method>
+        <test-method status="PASS" signature="LaunchWebsite()" name="LaunchWebsite" duration-ms="15831" started-at="2017-09-12T16:54:35Z" description="Opens the CashOps Manual Transactions URL" finished-at="2017-09-12T16:54:51Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:51Z" finished-at="2017-09-12T16:54:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: LaunchWebsite STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.LaunchWebsite()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="FillLoginDetails()" name="FillLoginDetails" duration-ms="867" started-at="2017-09-12T16:54:51Z" description="Fill the Login Details" finished-at="2017-09-12T16:54:52Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="2" started-at="2017-09-12T16:54:52Z" finished-at="2017-09-12T16:54:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: FillLoginDetails STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.FillLoginDetails()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="DoLogin()" name="DoLogin" duration-ms="2233" started-at="2017-09-12T16:54:52Z" description="Perform Login" finished-at="2017-09-12T16:54:54Z">
+        </test-method>
+        <test-method status="PASS" signature="UsersTab()" name="UsersTab" duration-ms="1443" started-at="2017-09-12T16:54:54Z" description="Fill in Transactions Details" finished-at="2017-09-12T16:54:56Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:54Z" finished-at="2017-09-12T16:54:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: DoLogin STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.DoLogin()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:54:56Z" finished-at="2017-09-12T16:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: UsersTab STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.UsersTab()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="SearchTrans()" name="SearchTrans" duration-ms="6228" started-at="2017-09-12T16:54:56Z" description="Search for Transactions Details" finished-at="2017-09-12T16:55:02Z">
+        </test-method>
+        <test-method status="PASS" signature="authorize03()" name="authorize03" duration-ms="4161" started-at="2017-09-12T16:55:02Z" description="Authorize 03 transactions" finished-at="2017-09-12T16:55:06Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:55:02Z" finished-at="2017-09-12T16:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: SearchTrans STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.SearchTrans()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:55:06Z" finished-at="2017-09-12T16:55:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: authorize03 STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.authorize03()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="incrementValues()" name="incrementValues" duration-ms="1" started-at="2017-09-12T16:55:06Z" description="Increment values for Canister and Seal Number" finished-at="2017-09-12T16:55:06Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)" name="tearDown" is-config="true" duration-ms="0" started-at="2017-09-12T16:55:06Z" finished-at="2017-09-12T16:55:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: incrementValues STATUS:SUCCESS METHOD:com.g4s.com.g4s.scb.CashOpsManualTransactions03.incrementValues()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="suiteTearDown()" name="suiteTearDown" is-config="true" duration-ms="224" started-at="2017-09-12T16:55:06Z" finished-at="2017-09-12T16:55:06Z">
         </test-method>
       </class>
     </test>
