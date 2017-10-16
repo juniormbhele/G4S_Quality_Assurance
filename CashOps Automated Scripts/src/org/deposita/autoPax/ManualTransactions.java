@@ -19,7 +19,7 @@ public class ManualTransactions
                 List<String> suites = new ArrayList<String>();
 
                 workingDir = System.getProperty("user.dir");
-                suites.add(workingDir+"\\Resources\\NedBank\\TestSuiteNedBank.xml"); //path of .xml file to be run-provide complete path
+                suites.add(workingDir+"\\Resources\\AUTOPAX\\TestSuiteAutopax.xml"); //path of .xml file to be run-provide complete path
 
                 TestNG test = new TestNG();
                 test.setTestSuites(suites);
@@ -42,7 +42,7 @@ public class ManualTransactions
                 List<String> suites = new ArrayList<String>();
 
                 workingDir = System.getProperty("user.dir");
-                suites.add(workingDir+"\\Resources\\NedBank\\AuthorizeNedbank.xml"); //path of .xml file to be run-provide complete path
+                suites.add(workingDir+"\\Resources\\AUTOPAX\\TestSuiteAutopax.xml"); //path of .xml file to be run-provide complete path
 
                 TestNG test = new TestNG();
                 test.setTestSuites(suites);
@@ -58,9 +58,7 @@ public class ManualTransactions
 
 		public static void main(String[] args)
 		{
-            Auth(3);
-
-
+            loopTrans(9);
         }
 	
 

@@ -58,7 +58,7 @@ public class CashOpsManualTransactions01
 	{
 	try 
 	{
-	driver.get("https://uat.cashops.deposita.co.za/deposita/searchManualTransactions.do");
+	driver.get("https://41.21.131.56/deposita/searchManualTransactions.do");
 	Thread.sleep(1000);
 	
 	driver.manage().window().maximize();
@@ -286,14 +286,16 @@ public class CashOpsManualTransactions01
 			}
 	}
 
-@Test(description = "Authorize 01 transactions", priority = 6, enabled = false)
+
+/*
+@Test(description = "Authorize 01 transactions", priority = 6, enabled = true)
     public void authorize01() throws Exception
     {
 
         try
         {
             //Navigate to the authorization screen
-            driver.get("https://uat.cashops.deposita.co.za/deposita/authoriseTransactions.do");
+            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
 
         // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
@@ -343,7 +345,7 @@ public class CashOpsManualTransactions01
 
         }
     }
-
+*/
 
     @BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
@@ -360,13 +362,13 @@ public class CashOpsManualTransactions01
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\NedBank\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\NedBank\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\NedBank\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

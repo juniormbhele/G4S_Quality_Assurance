@@ -58,7 +58,7 @@ public class CashOpsManualTransactions01
 	{
 	try 
 	{
-	driver.get("https://uat.cashops.deposita.co.za/deposita/searchManualTransactions.do");
+	driver.get("https://41.21.131.56/deposita/searchManualTransactions.do");
 	Thread.sleep(1000);
 	
 	driver.manage().window().maximize();
@@ -303,8 +303,8 @@ public class CashOpsManualTransactions01
 
         try
         {
-            //Navigate to the authorization screen
-            driver.get("https://uat.cashops.deposita.co.za/deposita/authoriseTransactions.do");
+            //Navigate to the authorization screen-
+            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
 
         // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));

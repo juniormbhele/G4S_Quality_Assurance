@@ -13,20 +13,20 @@ public class PhysicalCount
 {
 	
 	static WebDriver driver;
-	String cITClientID = "1002"	;
-	double expectedAmount = 30000;
-	double count1 = 30000;
-	String RemovalDate = "02/09/2017";
-	String BankedDate = "02/09/2017";
-	int CanisterNumber =610043;
-	String DepositReference = "'REF:JNR Count 001";
-	String CashCentreName = "000 SBV Capitec Bedfordview";
-	int BinSealNumber = 12001;
-	int SealNumber = 523718;
+	String cITClientID = "281449"	;
+	double expectedAmount = 3000;
+	double count1 = 3000;
+	String RemovalDate = "25/09/2017";
+	String BankedDate = "25/09/2017";
+	int CanisterNumber =610044;
+	String DepositReference = "'REF:CashPro Count 001";
+	String CashCentreName = "117 G4S Krugersdorp";
+	int BinSealNumber = 12005;
+	int SealNumber = 5237155;
 	String CurrencyCode = "ZAR (South Africa)"; 
 	
-	String ManagerUsername = "Junior.Bedfordview";
-	String ManagerPassword = "Y7lMfpgH";
+	String ManagerUsername = "Siyabonga.Mnguni";
+	String ManagerPassword = "password";
 	
 	String baseUrl ;
   @Test

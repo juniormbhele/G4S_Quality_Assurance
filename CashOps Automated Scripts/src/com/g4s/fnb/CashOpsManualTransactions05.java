@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions03 
+public class CashOpsManualTransactions05
 
 {
 	public WebDriver driver;
@@ -154,7 +154,7 @@ public class CashOpsManualTransactions03
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -227,8 +227,8 @@ public class CashOpsManualTransactions03
                 transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
 
                 // Fill in the Card Details
-                //WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
-                //cardId.sendKeys(datafile.getData("cardId"));
+                WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
+                cardId.sendKeys(datafile.getData("cardId"));
 
                 // Fill in the Vendor REF
                 WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
@@ -348,6 +348,72 @@ public class CashOpsManualTransactions03
         }
     }
 
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
+	public void incrementValues() throws Exception 
+	{
+        int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
+        int sealNumber = Integer.parseInt(values.getData("sealNumber"));
+        int amount = Integer.parseInt(values.getData("amount"));
+
+        int firstR200Notes = Integer.parseInt(values.getData("FirstR200Notes"));
+        int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
+        int secondR200Notes = Integer.parseInt(values.getData("SecondR200Notes"));
+        int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
+
+        amount = amount + 800;
+
+        canisterNumber++;
+        sealNumber++;
+
+        firstR200Notes = (amount/2)/200;
+        firstR100Notes = (amount/2)/100;
+
+        secondR200Notes = (amount/2)/200;
+        secondR100Notes = (amount/2)/100;
+
+        String CN = Integer.toString(canisterNumber);
+        String SN = Integer.toString(sealNumber);
+        String am = Integer.toString(amount);
+
+        String first100 = Integer.toString(firstR100Notes);
+        String first200 = Integer.toString(firstR200Notes);
+        String second100 = Integer.toString(secondR100Notes);
+        String second200 = Integer.toString(secondR200Notes);
+
+			try 
+			{
+				Properties properties = new Properties();
+				
+				
+				workingDir = System.getProperty("user.dir");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\FNB\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\FNB\\values.properties");
+		      
+		        properties.load(in);
+		        //in.close();
+                properties.setProperty("canisterNumber", CN);
+                properties.setProperty("sealNumber",SN);
+                properties.setProperty("amount", am);
+                properties.setProperty("FirstR100Notes",first100);
+                properties.setProperty("FirstR200Notes",first200);
+                properties.setProperty("SecondR100Notes",second100);
+                properties.setProperty("SecondR200Notes",second200);
+                properties.store(out, null);
+                out.close();
+			
+	           
+				
+			} 
+			catch (Exception e) 
+			{
+			
+			Assert.assertTrue(false);
+			System.out.println(e.getStackTrace());
+			}
+	}
+	
+	
+	
 	
 	@BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 

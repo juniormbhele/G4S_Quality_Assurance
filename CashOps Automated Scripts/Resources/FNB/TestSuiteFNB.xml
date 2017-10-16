@@ -14,6 +14,11 @@
        <class name="com.g4s.fnb.CashOpsManualTransactions03">
        </class>
     </classes>
-  </test>
-  
+  </test>  <test name="3">
+    <parameter name="host" value="1" />
+    <classes>
+        <class name="com.g4s.fnb.CashOpsManualTransactions05">
+        </class>
+    </classes>
+</test>
  </suite>

@@ -1,4 +1,4 @@
-package com.g4s.fnb;
+package org.deposita.autoPax;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions03 
+public class CashOpsManualTransactions05
 
 {
 	public WebDriver driver;
@@ -154,7 +154,7 @@ public class CashOpsManualTransactions03
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -227,8 +227,8 @@ public class CashOpsManualTransactions03
                 transactionDateStr.sendKeys(datafile.getData("transactionDateStr"));
 
                 // Fill in the Card Details
-                //WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
-                //cardId.sendKeys(datafile.getData("cardId"));
+                WebElement cardId = driver.findElement(uimap.getLocator("cardId"));
+                cardId.sendKeys(datafile.getData("cardId"));
 
                 // Fill in the Vendor REF
                 WebElement vendorSettlementReference = driver.findElement(uimap.getLocator("vendorSettlementReference"));
@@ -242,18 +242,12 @@ public class CashOpsManualTransactions03
                 WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
                 FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement FirstR200Notes = driver.findElement(uimap.getLocator("FirstR200Notes"));
-                FirstR200Notes.sendKeys(values.getData("FirstR200Notes"));
 
                 // Fill in the Second Count - R100 Notes
                 WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
                 SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
 
-                // Fill in the First Count - R200 Notes
-                WebElement SecondR200Notes = driver.findElement(uimap.getLocator("SecondR200Notes"));
-                SecondR200Notes.clear();
-                SecondR200Notes.sendKeys(values.getData("SecondR200Notes"));
+
 
                 // Fill in the First Count - Total
                 WebElement firsttotal = driver.findElement(uimap.getLocator("firsttotal"));
@@ -270,7 +264,7 @@ public class CashOpsManualTransactions03
                 processEntry.click();
 
 
-                TestNGResults.put("6",
+			TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
 			
@@ -290,8 +284,10 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-    @Test(description = "Authorize 03 transactions", priority = 6)
-    public void authorize03() throws Exception
+
+
+/*    @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
+    public void authorize05() throws Exception
     {
 
         try
@@ -304,9 +300,9 @@ public class CashOpsManualTransactions03
             transactionDateStr.clear();
             transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
 
-            // Fill in the Transaction Type - 03
+            // Fill in the Transaction Type - 05
             WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
-            TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
 
             // Fill in the Canister Number
             WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -342,12 +338,78 @@ public class CashOpsManualTransactions03
         catch (Exception e)
         {
             TestNGResults.put("5",
-                    new Object[] { 6d, "Authorize 03 transaction","03 Transaction should be authorized", "Fail" });
+                    new Object[] { 6d, "Authorize 05 transaction","05 Transaction should be authorized", "Fail" });
             Assert.assertTrue(false);
 
         }
     }
+    */
 
+
+
+    @Test(description = "Increment values for Canister and Seal Number", priority = 6)
+	public void incrementValues() throws Exception 
+	{
+        int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
+        int sealNumber = Integer.parseInt(values.getData("sealNumber"));
+        int amount = Integer.parseInt(values.getData("amount"));
+
+
+        int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
+        int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
+
+        amount = amount + 100;
+
+        canisterNumber++;
+        sealNumber++;
+
+
+        firstR100Notes = amount/100;
+
+
+        secondR100Notes = amount/100;
+
+        String CN = Integer.toString(canisterNumber);
+        String SN = Integer.toString(sealNumber);
+        String am = Integer.toString(amount);
+
+        String first100 = Integer.toString(firstR100Notes);
+
+        String second100 = Integer.toString(secondR100Notes);
+
+
+			try 
+			{
+				Properties properties = new Properties();
+				
+				
+				workingDir = System.getProperty("user.dir");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
+		      
+		        properties.load(in);
+		        //in.close();
+                properties.setProperty("canisterNumber", CN);
+                properties.setProperty("sealNumber",SN);
+                properties.setProperty("amount", am);
+                properties.setProperty("FirstR100Notes",first100);
+                properties.setProperty("SecondR100Notes",second100);
+                properties.store(out, null);
+                out.close();
+			
+	           
+				
+			} 
+			catch (Exception e) 
+			{
+			
+			Assert.assertTrue(false);
+			System.out.println(e.getStackTrace());
+			}
+	}
+	
+	
+	
 	
 	@BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
@@ -364,13 +426,13 @@ public class CashOpsManualTransactions03
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\FNB\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\FNB\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\FNB\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

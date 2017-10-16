@@ -53,7 +53,7 @@ public class CashOpsManualTransactions03
 	{
 	try 
 	{
-	driver.get("https://uat.cashops.deposita.co.za/deposita/searchManualTransactions.do");
+	driver.get("https://41.21.131.56/deposita/searchManualTransactions.do");
 	Thread.sleep(1000);
 	
 	driver.manage().window().maximize();
@@ -284,14 +284,14 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-    @Test(description = "Authorize 03 transactions", priority = 6, enabled = false)
+/*    @Test(description = "Authorize 03 transactions", priority = 6, enabled = true)
     public void authorize03() throws Exception
     {
 
         try
         {
             //Navigate to the authorization screen
-            driver.get("https://uat.cashops.deposita.co.za/deposita/authoriseTransactions.do");
+            driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
 
             // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
@@ -341,8 +341,11 @@ public class CashOpsManualTransactions03
 
         }
     }
+    */
 
-    @Test(description = "Increment values for Canister and Seal Number", priority = 6)
+
+
+   /* @Test(description = "Increment values for Canister and Seal Number", priority = 6)
 	public void incrementValues() throws Exception 
 	{
         int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
@@ -379,8 +382,8 @@ public class CashOpsManualTransactions03
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\NedBank\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\NedBank\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -401,9 +404,9 @@ public class CashOpsManualTransactions03
 			Assert.assertTrue(false);
 			System.out.println(e.getStackTrace());
 			}
-	}
+	}s
 	
-	
+	*/
 	
 	
 	@BeforeClass(alwaysRun = true)
@@ -421,13 +424,13 @@ public class CashOpsManualTransactions03
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\NedBank\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\NedBank\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\NedBank\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.
