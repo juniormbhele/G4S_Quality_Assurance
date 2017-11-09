@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Autopax Manual Transactions" thread-count="3" >
+<suite name="Hong Kong Drop Messages" thread-count="3" >
   <test name="1">
   <parameter name="host" value="1" />
     <classes>
-       <class name="org.deposita.autoPax.CashOpsManualTransactions01">
+       <class name="com.g4s.HONGKONG.CashOpsManualTransactions01">
        </class>
     </classes>
   </test>
   <test name="2">
   <parameter name="host" value="1" />
     <classes>
-       <class name="org.deposita.autoPax.CashOpsManualTransactions05">
+       <class name="com.g4s.HONGKONG.CashOpsManualTransactions05">
        </class>
     </classes>
   </test>
     <test name="3">
         <parameter name="host" value="1" />
         <classes>
-            <class name="org.deposita.autoPax.CashOpsManualTransactions03">
+            <class name="com.g4s.HONGKONG.CashOpsManualTransactions03">
             </class>
         </classes>
     </test>

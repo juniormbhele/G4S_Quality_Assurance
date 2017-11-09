@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Failed suite [NedBank Manual Transactions]">
+<suite thread-count="3" name="Failed suite [Blue Label Manual Transactions]">
   <parameter name="host" value="1"/>
   <test name="1(failed)" preserve-order="false">
     <parameter name="host" value="1"/>
     <classes>
-      <class name="org.deposita.autoPax.CashOpsManualTransactions01">
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
         <methods>
-          <include name="authorize01"/>
-          <include name="suiteTearDown"/>
-          <include name="suiteSetUp"/>
           <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+          <include name="authorize01"/>
+          <include name="LaunchWebsite"/>
         </methods>
       </class>
-      <class name="org.deposita.autoPax.CashOpsManualTransactions03">
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
         <methods>
+          <include name="tearDown"/>
+          <include name="suiteTearDown"/>
+          <include name="suiteSetUp"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="2(failed)" preserve-order="false">
+    <parameter name="host" value="1"/>
+    <classes>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
+        <methods>
+          <include name="tearDown"/>
           <include name="suiteSetUp"/>
           <include name="suiteTearDown"/>
+        </methods>
+      </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
+        <methods>
           <include name="tearDown"/>
+          <include name="suiteTearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="LaunchWebsite"/>
         </methods>
       </class>
     </classes>

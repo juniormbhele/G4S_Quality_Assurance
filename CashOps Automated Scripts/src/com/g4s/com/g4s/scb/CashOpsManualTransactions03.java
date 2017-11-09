@@ -355,13 +355,13 @@ public class CashOpsManualTransactions03
 		int SecondD200Notes = Integer.parseInt(values.getData("SecondD200Notes"));
 
 		
-		amount = amount + 200;
+		amount = amount + 1;
 		
 		canisterNumber++;
 		sealNumber++;
 		
-		firstD200Notes = amount/200;
-        SecondD200Notes = amount/200;
+		firstD200Notes = amount/1;
+        SecondD200Notes = amount/1;
 		
 		String CN = Integer.toString(canisterNumber);
 		String SN = Integer.toString(sealNumber);

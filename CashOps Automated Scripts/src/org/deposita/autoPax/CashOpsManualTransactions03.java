@@ -284,7 +284,7 @@ public class CashOpsManualTransactions03
 			}
 	}
 
-/*    @Test(description = "Authorize 03 transactions", priority = 6, enabled = true)
+  @Test(description = "Authorize 03 transactions", priority = 6, enabled = true)
     public void authorize03() throws Exception
     {
 
@@ -341,11 +341,11 @@ public class CashOpsManualTransactions03
 
         }
     }
-    */
 
 
 
-   /* @Test(description = "Increment values for Canister and Seal Number", priority = 6)
+
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
 	public void incrementValues() throws Exception 
 	{
         int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
@@ -404,9 +404,7 @@ public class CashOpsManualTransactions03
 			Assert.assertTrue(false);
 			System.out.println(e.getStackTrace());
 			}
-	}s
-	
-	*/
+	}
 	
 	
 	@BeforeClass(alwaysRun = true)

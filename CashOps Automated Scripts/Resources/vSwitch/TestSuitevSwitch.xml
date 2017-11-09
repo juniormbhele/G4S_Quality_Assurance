@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="vSwitch Manual Transactions" thread-count="3" >
+  <test name="1">
+  <parameter name="host" value="1" />
+    <classes>
+       <class name="com.g4s.vSwitch.CashOpsManualTransactions01">
+       </class>
+    </classes>
+  </test>
+</suite>

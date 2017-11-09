@@ -1,4 +1,4 @@
-package org.deposita.autoPax;
+package com.g4s.vSwitch;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions05
+public class CashOpsManualTransactions01
 
 {
 	public WebDriver driver;
@@ -43,7 +43,6 @@ public class CashOpsManualTransactions05
 	
 	// Declare A Map Object To Hold TestNG Results
 	Map<String, Object[]> TestNGResults;
-
 	public static String driverPath = null;
 	
 	
@@ -59,7 +58,7 @@ public class CashOpsManualTransactions05
 	driver.manage().window().maximize();
 	TestNGResults.put("2", new Object[] { 1d, "Navigate to CashOps Manual Transactions", "Site gets opened", "Pass" });
 	
-	Thread.sleep(1000);
+
 	// Take screenshot and store as a file format
 	File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	
@@ -90,7 +89,7 @@ public class CashOpsManualTransactions05
 			// Get the password element
 			WebElement password = driver.findElement(uimap.getLocator("CO_Password_field"));
 			password.sendKeys(datafile.getData("CO_password"));
-			
+	
 			
 			TestNGResults.put("3", new Object[] { 2d, "Fill Login form data (Username/Password)",
 			"Login details gets filled", "Pass" });
@@ -100,7 +99,7 @@ public class CashOpsManualTransactions05
 			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			
 			// now copy the  screenshot to desired location using copyFile //method
-			workingDir = System.getProperty("user.dir");
+                workingDir = System.getProperty("user.dir");
 			FileUtils.copyFile(src, new File(workingDir+"\\Screenshots\\Passed\\"+System.currentTimeMillis()+".png"));
 			} catch (Exception e) 
 			{
@@ -125,11 +124,11 @@ public class CashOpsManualTransactions05
 	
 			TestNGResults.put("4",
 			new Object[] { 3d, "Click Login and verify welcome message", "Login success", "Pass" });
-			
+			Thread.sleep(1000);
 			
 			// Take screenshot and store as a file format
 			File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-			
+			Thread.sleep(1000);
 						
 			// now copy the  screenshot to desired location using copyFile //method
                 workingDir = System.getProperty("user.dir");
@@ -150,10 +149,11 @@ public class CashOpsManualTransactions05
 		
 			try 
 			{
+				
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -210,7 +210,7 @@ public class CashOpsManualTransactions05
 		
 			try 
 			{
-                // Click the search button
+                 // Click the search button
                 WebElement search = driver.findElement(uimap.getLocator("search"));
                 search.click();
                 Thread.sleep(1000);
@@ -241,11 +241,9 @@ public class CashOpsManualTransactions05
                 WebElement FirstR100Notes = driver.findElement(uimap.getLocator("FirstR100Notes"));
                 FirstR100Notes.sendKeys(values.getData("FirstR100Notes"));
 
-
                 // Fill in the Second Count - R100 Notes
                 WebElement SecondR100Notes = driver.findElement(uimap.getLocator("SecondR100Notes"));
                 SecondR100Notes.sendKeys(values.getData("SecondR100Notes"));
-
 
 
                 // Fill in the First Count - Total
@@ -261,8 +259,7 @@ public class CashOpsManualTransactions05
                 // Click Process Entry
                 WebElement processEntry = driver.findElement(uimap.getLocator("processEntry"));
                 processEntry.click();
-
-
+			
 			TestNGResults.put("6",
 			new Object[] { 5d, "Fill in Manual Transaction Details and Search", "Fields should be field with required option", "Pass" });
 			
@@ -285,8 +282,8 @@ public class CashOpsManualTransactions05
 
 
 
-    @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
-    public void authorize05() throws Exception
+@Test(description = "Authorize 01 transactions", priority = 6, enabled = true)
+    public void authorize01() throws Exception
     {
 
         try
@@ -294,14 +291,14 @@ public class CashOpsManualTransactions05
             //Navigate to the authorization screen
             driver.get("https://41.21.131.56/deposita/authoriseTransactions.do");
 
-            // Fill in the transaction from Date
+        // Fill in the transaction from Date
             WebElement transactionDateStr = driver.findElement(uimap.getLocator("fromDateStr"));
             transactionDateStr.clear();
             transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
 
-            // Fill in the Transaction Type - 05
+            // Fill in the Transaction Type - 01
             WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
-            TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField"));
 
             // Fill in the Canister Number
             WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -324,7 +321,7 @@ public class CashOpsManualTransactions05
 
 
             TestNGResults.put("6",
-                    new Object[]{6d, "Authorize 03 transaction", "03 Transaction should be authorized", "Pass"});
+                    new Object[]{6d, "Authorize 01 transaction", "01 Transaction should be authorized", "Pass"});
 
 
             // Take screenshot and store as a file format
@@ -337,17 +334,16 @@ public class CashOpsManualTransactions05
         catch (Exception e)
         {
             TestNGResults.put("5",
-                    new Object[] { 6d, "Authorize 05 transaction","05 Transaction should be authorized", "Fail" });
+                    new Object[] { 6d, "Authorize 01 transaction","01 Transaction should be authorized", "Fail" });
             Assert.assertTrue(false);
 
         }
     }
 
 
-/*
-    @Test(description = "Increment values for Canister and Seal Number", priority = 6)
-	public void incrementValues() throws Exception 
-	{
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
+    public void incrementValues() throws Exception
+    {
         int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
         int sealNumber = Integer.parseInt(values.getData("sealNumber"));
         int amount = Integer.parseInt(values.getData("amount"));
@@ -376,40 +372,40 @@ public class CashOpsManualTransactions05
         String second100 = Integer.toString(secondR100Notes);
 
 
-			try 
-			{
-				Properties properties = new Properties();
-				
-				
-				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
-		      
-		        properties.load(in);
-		        //in.close();
-                properties.setProperty("canisterNumber", CN);
-                properties.setProperty("sealNumber",SN);
-                properties.setProperty("amount", am);
-                properties.setProperty("FirstR100Notes",first100);
-                properties.setProperty("SecondR100Notes",second100);
-                properties.store(out, null);
-                out.close();
-			
-	           
-				
-			} 
-			catch (Exception e) 
-			{
-			
-			Assert.assertTrue(false);
-			System.out.println(e.getStackTrace());
-			}
-	}
-	
-	*/
-	
-	
-	@BeforeClass(alwaysRun = true)
+        try
+        {
+            Properties properties = new Properties();
+
+
+            workingDir = System.getProperty("user.dir");
+            FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
+            FileInputStream in = new FileInputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
+
+            properties.load(in);
+            //in.close();
+            properties.setProperty("canisterNumber", CN);
+            properties.setProperty("sealNumber",SN);
+            properties.setProperty("amount", am);
+            properties.setProperty("FirstR100Notes",first100);
+            properties.setProperty("SecondR100Notes",second100);
+            properties.store(out, null);
+            out.close();
+
+
+
+        }
+        catch (Exception e)
+        {
+
+            Assert.assertTrue(false);
+            System.out.println(e.getStackTrace());
+        }
+    }
+
+
+
+
+    @BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
 	{
 			// create a new work book
@@ -424,13 +420,13 @@ public class CashOpsManualTransactions05
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\vSwitch\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\vSwitch\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\vSwitch\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.
@@ -502,10 +498,9 @@ public class CashOpsManualTransactions05
 		 
 		// Copy files to specific location here it will save all screenshot in our project home directory and
 		// result.getName() will return name of test case so that screenshot name will be same
-            workingDir = System.getProperty("user.dir");
-		FileUtils.copyFile(source, new File(workingDir+"./Screenshots/Failed/"+result.getName()+".png"));
+		FileUtils.copyFile(source, new File("./Screenshots/Failed/"+result.getName()+".png"));
 		 
-		System.out.println(result.getName()+" Failed, Screenshot taken");
+		System.out.println("Screenshot taken");
 		} 
 		catch (Exception e)
 		{

@@ -1,4 +1,4 @@
-package org.deposita.autoPax;
+package com.g4s.vSwitch;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions05
+public class CashOpsManualTransactions03 
 
 {
 	public WebDriver driver;
@@ -150,10 +150,11 @@ public class CashOpsManualTransactions05
 		
 			try 
 			{
+				
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -283,10 +284,8 @@ public class CashOpsManualTransactions05
 			}
 	}
 
-
-
-    @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
-    public void authorize05() throws Exception
+  @Test(description = "Authorize 03 transactions", priority = 6, enabled = true)
+    public void authorize03() throws Exception
     {
 
         try
@@ -299,9 +298,9 @@ public class CashOpsManualTransactions05
             transactionDateStr.clear();
             transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
 
-            // Fill in the Transaction Type - 05
+            // Fill in the Transaction Type - 03
             WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
-            TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
 
             // Fill in the Canister Number
             WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -337,14 +336,14 @@ public class CashOpsManualTransactions05
         catch (Exception e)
         {
             TestNGResults.put("5",
-                    new Object[] { 6d, "Authorize 05 transaction","05 Transaction should be authorized", "Fail" });
+                    new Object[] { 6d, "Authorize 03 transaction","03 Transaction should be authorized", "Fail" });
             Assert.assertTrue(false);
 
         }
     }
 
 
-/*
+
     @Test(description = "Increment values for Canister and Seal Number", priority = 6)
 	public void incrementValues() throws Exception 
 	{
@@ -382,8 +381,8 @@ public class CashOpsManualTransactions05
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -406,7 +405,7 @@ public class CashOpsManualTransactions05
 			}
 	}
 	
-	*/
+
 	
 	
 	@BeforeClass(alwaysRun = true)
@@ -424,13 +423,13 @@ public class CashOpsManualTransactions05
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\vSwitch\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\vSwitch\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\vSwitch\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

@@ -1,4 +1,4 @@
-package org.deposita.autoPax;
+package com.g4s.vSwitch;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -285,7 +285,7 @@ public class CashOpsManualTransactions05
 
 
 
-    @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
+   @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
     public void authorize05() throws Exception
     {
 
@@ -382,8 +382,8 @@ public class CashOpsManualTransactions05
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\AUTOPAX\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\vSwitch\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -424,13 +424,13 @@ public class CashOpsManualTransactions05
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\AUTOPAX\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\vSwitch\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\AUTOPAX\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\vSwitch\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\AUTOPAX\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\vSwitch\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

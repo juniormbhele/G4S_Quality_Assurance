@@ -287,7 +287,7 @@ public class CashOpsManualTransactions01
 	}
 
 
-/*
+
 @Test(description = "Authorize 01 transactions", priority = 6, enabled = true)
     public void authorize01() throws Exception
     {
@@ -345,7 +345,7 @@ public class CashOpsManualTransactions01
 
         }
     }
-*/
+
 
     @BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
