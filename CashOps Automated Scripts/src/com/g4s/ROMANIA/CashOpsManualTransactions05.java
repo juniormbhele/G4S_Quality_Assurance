@@ -1,4 +1,4 @@
-package com.g4s.Blue_Label;
+package com.g4s.ROMANIA;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -344,7 +344,7 @@ public class CashOpsManualTransactions05
     }
 
 
-/*
+
     @Test(description = "Increment values for Canister and Seal Number", priority = 6)
 	public void incrementValues() throws Exception 
 	{
@@ -382,8 +382,8 @@ public class CashOpsManualTransactions05
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\BLUE\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\BLUE\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\ROMANIA\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\ROMANIA\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -406,7 +406,7 @@ public class CashOpsManualTransactions05
 			}
 	}
 	
-	*/
+	
 	
 	
 	@BeforeClass(alwaysRun = true)
@@ -424,13 +424,13 @@ public class CashOpsManualTransactions05
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\BLUE\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\ROMANIA\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\BLUE\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\ROMANIA\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\BLUE\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\ROMANIA\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

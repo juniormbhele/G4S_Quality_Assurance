@@ -19,14 +19,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class CashOpsManualTransactions01
@@ -345,6 +339,68 @@ public class CashOpsManualTransactions01
 
         }
     }
+
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
+    public void incrementValues() throws Exception
+    {
+        int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
+        int sealNumber = Integer.parseInt(values.getData("sealNumber"));
+        int amount = Integer.parseInt(values.getData("amount"));
+
+
+        int firstR100Notes = Integer.parseInt(values.getData("FirstR100Notes"));
+        int secondR100Notes = Integer.parseInt(values.getData("SecondR100Notes"));
+
+        amount = amount + 100;
+
+        canisterNumber++;
+        sealNumber++;
+
+
+        firstR100Notes = amount/100;
+
+
+        secondR100Notes = amount/100;
+
+        String CN = Integer.toString(canisterNumber);
+        String SN = Integer.toString(sealNumber);
+        String am = Integer.toString(amount);
+
+        String first100 = Integer.toString(firstR100Notes);
+
+        String second100 = Integer.toString(secondR100Notes);
+
+
+        try
+        {
+            Properties properties = new Properties();
+
+
+            workingDir = System.getProperty("user.dir");
+            FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\BLUE\\values.properties");
+            FileInputStream in = new FileInputStream(workingDir+"\\Resources\\BLUE\\values.properties");
+
+            properties.load(in);
+            //in.close();
+            properties.setProperty("canisterNumber", CN);
+            properties.setProperty("sealNumber",SN);
+            properties.setProperty("amount", am);
+            properties.setProperty("FirstR100Notes",first100);
+            properties.setProperty("SecondR100Notes",second100);
+            properties.store(out, null);
+            out.close();
+
+
+
+        }
+        catch (Exception e)
+        {
+
+            Assert.assertTrue(false);
+            System.out.println(e.getStackTrace());
+        }
+    }
+
 
 
     @BeforeClass(alwaysRun = true)

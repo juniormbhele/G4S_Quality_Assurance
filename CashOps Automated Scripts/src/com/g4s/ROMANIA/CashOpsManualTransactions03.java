@@ -1,4 +1,4 @@
-package com.g4s.Blue_Label;
+package com.g4s.ROMANIA;
 
 import cashOpsPackage.UIMap;
 import org.apache.commons.io.FileUtils;
@@ -23,7 +23,7 @@ import java.io.*;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
-public class CashOpsManualTransactions05
+public class CashOpsManualTransactions03 
 
 {
 	public WebDriver driver;
@@ -150,10 +150,11 @@ public class CashOpsManualTransactions05
 		
 			try 
 			{
+				
 			
 				// Fill in the Transaction Type - 01
 				WebElement TransTypeField = driver.findElement(uimap.getLocator("TransTypeField"));
-				TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+				TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
 			
 				// Fill in the Canister Number
 				WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -283,10 +284,8 @@ public class CashOpsManualTransactions05
 			}
 	}
 
-
-
-   @Test(description = "Authorize 05 transactions", priority = 6, enabled = true)
-    public void authorize05() throws Exception
+  @Test(description = "Authorize 03 transactions", priority = 6, enabled = true)
+    public void authorize03() throws Exception
     {
 
         try
@@ -299,9 +298,9 @@ public class CashOpsManualTransactions05
             transactionDateStr.clear();
             transactionDateStr.sendKeys(datafile.getData("fromDateStr"));
 
-            // Fill in the Transaction Type - 05
+            // Fill in the Transaction Type - 03
             WebElement TransTypeField = driver.findElement(uimap.getLocator("transactionType.id"));
-            TransTypeField.sendKeys(datafile.getData("TransTypeField05"));
+            TransTypeField.sendKeys(datafile.getData("TransTypeField03"));
 
             // Fill in the Canister Number
             WebElement canisterNumber = driver.findElement(uimap.getLocator("canisterNumber"));
@@ -337,15 +336,14 @@ public class CashOpsManualTransactions05
         catch (Exception e)
         {
             TestNGResults.put("5",
-                    new Object[] { 6d, "Authorize 05 transaction","05 Transaction should be authorized", "Fail" });
+                    new Object[] { 6d, "Authorize 03 transaction","03 Transaction should be authorized", "Fail" });
             Assert.assertTrue(false);
 
         }
     }
 
 
-/*
-    @Test(description = "Increment values for Canister and Seal Number", priority = 6)
+    @Test(description = "Increment values for Canister and Seal Number", priority = 7)
 	public void incrementValues() throws Exception 
 	{
         int canisterNumber = Integer.parseInt(values.getData("canisterNumber"));
@@ -382,8 +380,8 @@ public class CashOpsManualTransactions05
 				
 				
 				workingDir = System.getProperty("user.dir");
-		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\BLUE\\values.properties");
-		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\BLUE\\values.properties");
+		        FileOutputStream out = new FileOutputStream(workingDir+"\\Resources\\ROMANIA\\values.properties");
+		        FileInputStream in = new FileInputStream(workingDir+"\\Resources\\ROMANIA\\values.properties");
 		      
 		        properties.load(in);
 		        //in.close();
@@ -406,8 +404,6 @@ public class CashOpsManualTransactions05
 			}
 	}
 	
-	*/
-	
 	
 	@BeforeClass(alwaysRun = true)
 	public void suiteSetUp() 
@@ -424,13 +420,13 @@ public class CashOpsManualTransactions05
 			{
 			// Get current working directory and load the data file
 			workingDir = System.getProperty("user.dir");
-			datafile = new UIMap(workingDir + "\\Resources\\BLUE\\datafile.properties");
+			datafile = new UIMap(workingDir + "\\Resources\\ROMANIA\\datafile.properties");
 			
 			// Get current working directory and load the data file
 						workingDir = System.getProperty("user.dir");
-						values = new UIMap(workingDir + "\\Resources\\BLUE\\values.properties");
+						values = new UIMap(workingDir + "\\Resources\\ROMANIA\\values.properties");
 			// Get the object map file
-			uimap = new UIMap(workingDir + "\\Resources\\BLUE\\locator.properties");
+			uimap = new UIMap(workingDir + "\\Resources\\ROMANIA\\locator.properties");
 			
 			
 			// Setting up Chrome driver path.

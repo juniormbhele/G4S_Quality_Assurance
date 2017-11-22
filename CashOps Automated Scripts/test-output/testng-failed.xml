@@ -5,20 +5,27 @@
   <test name="1(failed)" preserve-order="false">
     <parameter name="host" value="1"/>
     <classes>
-      <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
-        <methods>
-          <include name="tearDown"/>
-          <include name="suiteSetUp"/>
-          <include name="suiteTearDown"/>
-          <include name="authorize01"/>
-          <include name="LaunchWebsite"/>
-        </methods>
-      </class>
       <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
         <methods>
           <include name="tearDown"/>
           <include name="suiteTearDown"/>
           <include name="suiteSetUp"/>
+        </methods>
+      </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
+        <methods>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="SearchTrans"/>
+          <include name="suiteTearDown"/>
+          <include name="LaunchWebsite"/>
+        </methods>
+      </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions05">
+        <methods>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+          <include name="tearDown"/>
         </methods>
       </class>
     </classes>
@@ -26,6 +33,13 @@
   <test name="2(failed)" preserve-order="false">
     <parameter name="host" value="1"/>
     <classes>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
+        <methods>
+          <include name="tearDown"/>
+          <include name="suiteTearDown"/>
+          <include name="suiteSetUp"/>
+        </methods>
+      </class>
       <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
         <methods>
           <include name="tearDown"/>
@@ -33,12 +47,40 @@
           <include name="suiteTearDown"/>
         </methods>
       </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions05">
+        <methods>
+          <include name="suiteSetUp"/>
+          <include name="SearchTrans"/>
+          <include name="suiteTearDown"/>
+          <include name="tearDown"/>
+          <include name="LaunchWebsite"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="3(failed)" preserve-order="false">
+    <parameter name="host" value="1"/>
+    <classes>
       <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
         <methods>
           <include name="tearDown"/>
           <include name="suiteTearDown"/>
           <include name="suiteSetUp"/>
           <include name="LaunchWebsite"/>
+        </methods>
+      </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions01">
+        <methods>
+          <include name="tearDown"/>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+        </methods>
+      </class>
+      <class name="com.g4s.Blue_Label.CashOpsManualTransactions05">
+        <methods>
+          <include name="suiteSetUp"/>
+          <include name="suiteTearDown"/>
+          <include name="tearDown"/>
         </methods>
       </class>
     </classes>

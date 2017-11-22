@@ -8,11 +8,18 @@
        </class>
     </classes>
   </test>
-  <test name="2">
-  <parameter name="host" value="1" />
-    <classes>
-       <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
-       </class>
-    </classes>
-  </test>
+    <test name="2">
+        <parameter name="host" value="1" />
+        <classes>
+            <class name="com.g4s.Blue_Label.CashOpsManualTransactions05">
+            </class>
+        </classes>
+    </test>
+    <test name="3">
+        <parameter name="host" value="1" />
+        <classes>
+            <class name="com.g4s.Blue_Label.CashOpsManualTransactions03">
+            </class>
+        </classes>
+    </test>
 </suite>
